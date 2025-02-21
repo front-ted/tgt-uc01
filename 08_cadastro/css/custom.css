@@ -1,0 +1,21 @@
+h2 span{font-size: 0.7em;}
+.bloco-laranja{
+	overflow: hidden;
+	background: rgb(255,218,186);
+	background: linear-gradient(30deg, rgba(255,218,186,1) 0%, rgba(255,241,176,1) 100%);
+	padding: 100px 0;
+}
+.bloco1{
+	background-image: url('../img/bg_gradiente_top.png'), url('../img/div_elemento.png'), url('../img/div.png');
+	background-position: top left, bottom right 5%, bottom -10px center;
+	background-size: auto, 10%, contain;
+	background-repeat: no-repeat;
+	padding-top: unset;
+}
+.bloco-branco{
+	background-image: url('../img/bg_elemento2.png');
+	background-position: left 10px top 50%;
+	background-size: 15%;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+}
