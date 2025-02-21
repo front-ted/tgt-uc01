@@ -168,8 +168,8 @@
                 <p>As teorias de motivação aplicadas ao turismo têm como objetivo entender as razões pelas quais os
                     indivíduos decidem viajar, explorando motivações internas e externas que influenciam essas escolhas.
                 </p>
-                <p class="no-print" aria-hidden="true">Clique ou toque na tela para visualizar o conteúdo.</p>
-                <div class="accordion mb-4" id="accordion1" aria-hidden="true">
+                <p class="no-print">Clique ou toque na tela para visualizar o conteúdo.</p>
+                <div class="accordion mb-4" id="accordion1">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -257,59 +257,345 @@
                         </div>
                     </div>
                 </div>
-                <div class="no-print sr-only">
-                    <h4>Lazer e descanso</h4>
-                    <p>O turismo pode ser visto como uma forma de reequilibrar as emoções e buscar uma
-                        sensação de bem-estar. Cada turista é movido por motivações distintas, como fuga da
-                        rotina, desejo de socialização e busca por novas experiências, relaxar ou explorar
-                        novas culturas.</p>
-                    <h4>Crescimento pessoal e cultural</h4>
-                    <p>Nesse caso, são predominantes as atividades que permitam ao viajante conhecer novas
-                        culturas, aprender línguas ou participar de experiências que promovam crescimento
-                        pessoal.</p>
-                    <h4>Família e amigos</h4>
-                    <p>A busca por interações sociais e o comportamento de grupos de referência, como o
-                        círculo de amigos ou familiar, afeta diretamente as decisões de viagem. O viajante
-                        procura fortalecer as relações familiares e sociais por meio da viagem, estreitando
-                        seus laços com amigos e parentes. Opta por viagens motivadas por encontros de
-                        família, celebrações ou simplesmente para passar tempo com entes queridos.</p>
-                    <h4>Trabalho e negócios</h4>
-                    <p>Esse tipo de viagem inclui propósitos como participar de reuniões, conferências,
-                        feiras, eventos de <i>networking</i>, treinamentos e visitas a clientes ou
-                        fornecedores. As viagens de negócio geralmente são motivadas por obrigações
-                        profissionais, demandando
-                        um planejamento diferenciado, com foco em eficiência e praticidade.</p>
-                    <h4>Motivações específicas</h4>
-                    <p>O viajante também pode buscar uma viagem por motivos pontuais e interesses
-                        específicos, como eventos, festivais, celebrações ou festividades religiosas,
-                        retiros espirituais, competições esportivas, turismo de saúde, entre outros nichos.
-                    </p>
-                </div>
+
                 <p>Compreender as motivações do turista é fundamental para criar roteiros assertivos, que atendam a
                     esses desejos, garantindo uma experiência enriquecedora a ele.</p>
 
                 <h3>Comportamento</h3>
-                <div class="grafismo">
-                    <div class="destaque gradiente">
-                        <p>Como as principais características comportamentais dos turistas influenciam suas escolhas de
-                            viagem? O comportamento de viagem refere-se às decisões e às ações tomadas pelos indivíduos
-                            ao planejar, selecionar e realizar viagens e envolve uma série de etapas, desde a
-                            identificação das necessidades ou dos desejos de viagem, passando pela pesquisa e a seleção
-                            de destinos e serviços, até a experiência de viagem em si e sua posterior avaliação.</p>
-                    </div>
+                <div class="destaque-imagem shadow radius">
+                    <p>Como as principais características comportamentais dos turistas influenciam suas escolhas de
+                        viagem? O comportamento de viagem refere-se às decisões e às ações tomadas pelos indivíduos
+                        ao planejar, selecionar e realizar viagens e envolve uma série de etapas, desde a
+                        identificação das necessidades ou dos desejos de viagem, passando pela pesquisa e a seleção
+                        de destinos e serviços, até a experiência de viagem em si e sua posterior avaliação.</p>
                 </div>
 
                 <h4>Processo de decisão de viagem</h4>
                 <p>O processo de decisão de viagem refere-se ao conjunto de ações tomadas pelo viajante até a chegada do
                     momento da viagem. Que tal percorrer o mapa e conhecer cada etapa?</p>
 
-                <div class="no-print" aria-hidden="true">
+                <div class="no-print">
                     <p>Clique ou toque na tela para visualizar o conteúdo.</p>
-                    <div class="painel1">
-                        
+                    <div class="painel1 no-print">
+                        <button type="button" class="bt-desejo botao check" data-bs-toggle="modal"
+                            data-bs-target="#modal-desejo">
+                            <img src="img/painel_bt_hover.png" class="no-print" aria-hidden="true">
+                            <img src="img/painel_bt_hover2.png" class="circulo" aria-hidden="true">
+                            <span class="sr-only">Desejo de viajar</span>
+                        </button>
+                        <button type="button" class="bt-pesquisa botao check" data-bs-toggle="modal"
+                            data-bs-target="#modal-pesquisa">
+                            <img src="img/painel_bt_hover.png" class="no-print" aria-hidden="true">
+                            <img src="img/painel_bt_hover2.png" class="circulo" aria-hidden="true">
+                            <span class="sr-only">Pesquisa</span>
+                        </button>
+                        <button type="button" class="bt-avaliacao botao check" data-bs-toggle="modal"
+                            data-bs-target="#modal-avaliacao">
+                            <img src="img/painel_bt_hover.png" class="no-print" aria-hidden="true">
+                            <img src="img/painel_bt_hover2.png" class="circulo" aria-hidden="true">
+                            <span class="sr-only">Avaliação das alternativas</span>
+                        </button>
+                        <button type="button" class="bt-decisao botao check" data-bs-toggle="modal"
+                            data-bs-target="#modal-decisao">
+                            <img src="img/painel_bt_hover.png" class="no-print" aria-hidden="true">
+                            <img src="img/painel_bt_hover2.png" class="circulo" aria-hidden="true">
+                            <span class="sr-only">Decisão de compra</span>
+                        </button>
+                        <button type="button" class="bt-consumo botao check" data-bs-toggle="modal"
+                            data-bs-target="#modal-consumo">
+                            <img src="img/painel_bt_hover.png" class="no-print" aria-hidden="true">
+                            <img src="img/painel_bt_hover2.png" class="circulo" aria-hidden="true">
+                            <span class="sr-only">Consumo</span>
+                        </button>
+                        <button type="button" class="bt-posconsumo botao check" data-bs-toggle="modal"
+                            data-bs-target="#modal-posconsumo">
+                            <img src="img/painel_bt_hover.png" class="no-print" aria-hidden="true">
+                            <img src="img/painel_bt_hover2.png" class="circulo" aria-hidden="true">
+                            <span class="sr-only">Pós-consumo</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-desejo" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Desejo de viajar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>O primeiro passo é quando o indivíduo reconhece a necessidade ou o desejo de
+                                    viajar. Esse desejo pode ser despertado por vários motivos, como busca por
+                                    descanso, lazer, aventura ou razões profissionais, como viagens de negócios. O
+                                    viajante também pode ser influenciado por familiares e amigos e, até mesmo,
+                                    promoções de viagens disponíveis.</p>
+                                <div class="modal-footer">
+                                    <button type="button" class="botao hvr-grow-shadow"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-pesquisa" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pesquisa</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Nessa etapa, o viajante inicia a coleta das informações, buscando as alternativas
+                                    disponíveis para suprir sua necessidade por meio dos canais de compra. Sendo
+                                    assim, tende a consultar diversas fontes, como agências de viagem, sites e
+                                    plataformas de reserva, anúncios e blogs, além de influenciadores digitais.
+                                    Também é comum pedir recomendações a amigos, familiares e colegas de trabalho
+                                    que tenham experiência com viagens.</p>
+                                <div class="modal-footer">
+                                    <button type="button" class="botao hvr-grow-shadow"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-avaliacao" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Avaliação das alternativas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Após a pesquisa, o turista avalia as alternativas disponíveis, de acordo com suas
+                                    necessidades e possibilidades, comparando destinos. Nessa etapa, o turista
+                                    define seus critérios de escolha. Veja alguns:</p>
+                                <ul class="marcador-padrao">
+                                    <li><b>Preço e facilidade de compra</b>: comparação de preços e promoções, assim
+                                        como das formas de pagamento.</li>
+                                    <li><b>Percepção de valor</b>: avaliação do nível de qualidade e conforto
+                                        esperado durante a viagem, como comodidade em hospedagem e serviços
+                                        oferecidos no destino.</li>
+                                    <li><b><i>Status</i></b>: escolha de um produto ou serviço pelo <i>status</i>
+                                        social que a marca confere.</li>
+                                </ul>
+                                <div class="modal-footer">
+                                    <button type="button" class="botao hvr-grow-shadow"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-decisao" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Decisão de compra</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Escolha do destino, da data e dos serviços que melhor atendem às necessidades do
+                                    turista na viagem, começando as etapas de reserva, acomodação, atividades,
+                                    transporte e/ou serviços de agência.</p>
+                                <div class="modal-footer">
+                                    <button type="button" class="botao hvr-grow-shadow"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-consumo" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Consumo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>É o momento em que o turista vivencia a experiência. No turismo, o produto é
+                                    consumido à medida que o cliente desfruta dos serviços prestados, desde o
+                                    momento da compra até o final da viagem.</p>
+                                <div class="modal-footer">
+                                    <button type="button" class="botao hvr-grow-shadow"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-posconsumo" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pós-consumo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>No momento pós-viagem, o turista avalia o resultado da viagem e expressa
+                                    satisfação ou insatisfação. Essa etapa é crucial para o setor turístico, pois
+                                    ajuda a identificar a percepção do turista em relação aos serviços contratados e
+                                    assim realizar melhorias se necessário. Além disso, a satisfação é um fator
+                                    essencial para a fidelização do cliente e suas recomendações a outras pessoas.
+                                    Afinal, avaliações, comentários e <i>reviews</i> em plataformas digitais cada
+                                    vez mais impactam diretamente na decisão de compra dos consumidores.</p>
+                                <div class="modal-footer">
+                                    <button type="button" class="botao hvr-grow-shadow"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <h4>Fatores influenciadores</h4>
+                <p>O comportamento do turista pode variar dependendo de fatores culturais, econômicos, ambientais e
+                    pessoais. Mudanças circunstanciais, crises sanitárias ou avanços tecnológicos também são fatores que
+                    influenciam na tomada de decisão. Dessa forma, a análise dessas variáveis deve ser levada em
+                    consideração para um planejamento eficaz.</p>
+                <p class="no-print">Clique ou toque na tela para visualizar o conteúdo.</p>
+                <div class="accordion mb-4" id="accordion2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                Fatores sociais e culturais
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                            data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                <p>Os fatores sociais desempenham um papel significativo no comportamento de viagem. A
+                                    fase de vida em que o turista se encontra define o tipo de viagem escolhida.
+                                    Percebe-se que jovens solteiros tendem a experienciar mais, desbravando os destinos
+                                    visitados. Já casais com filhos pequenos optam por destinos mais estruturados e
+                                    seguros. Igualmente os fatores culturais têm influência na escolha dos destinos, uma
+                                    vez que as preferências por atividades turísticas estão, muitas vezes, relacionadas
+                                    a valores culturais. Entre as atividades mais procuradas por turistas no mundo todo
+                                    estão as experiências gastronômicas e culturais. Há também uma forte tendência entre
+                                    os viajantes das gerações Z e <i>millennials</i> em buscar experiências autênticas
+                                    que
+                                    permitam a eles conhecerem a realidade cultural do lugar visitado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Fatores econômicos
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                            data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                <p>Entre os principais fatores que influenciam a escolha de uma viagem está o poder de
+                                    compra do consumidor. É importante ressaltar que existem questões que afetam
+                                    diretamente o poder de compra dos viajantes, como as taxas de câmbio, a inflação e
+                                    os preços dos produtos turísticos, como passagens aéreas e hospedagem. Portanto, o
+                                    turismo é fortemente impactado pelas crises econômicas, pois o indivíduo, provendo
+                                    de menos recursos, é obrigado a priorizar as necessidades essenciais, o que resulta
+                                    na queda da busca por atividades de lazer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Fatores tecnológicos
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                            data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                <p>A tecnologia é uma aliada das atividades turísticas e tem se tornado outro fator
+                                    determinante no comportamento de viagem. A popularização de plataformas
+                                    <i>on-line</i>
+                                    transformou a maneira como as pessoas planejam e realizam suas viagens. São inúmeras
+                                    as ferramentas disponíveis ao viajante, como aplicativos de comparação de preços,
+                                    redes de avaliação de serviços e plataformas de compartilhamento de acomodações e
+                                    transporte. Tudo isso tornou o turismo mais acessível e o processo de reserva muito
+                                    mais rápido. Além disso, as redes sociais aproximam o público por meio do
+                                    compartilhamento de fotos e vídeos em tempo real, com a criação dos mais variados
+                                    conteúdos sobre os destinos. Por exemplo, há os lugares considerados
+                                    “instagramáveis” (para divulgação na rede social Instagram), pois oferecem o cenário
+                                    perfeito para fotos incríveis, com tendências divulgadas por influenciadores
+                                    digitais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                Fatores ambientais e crises
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                            data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                <p>Por fim, os fatores ambientais e as crises globais, como desastres naturais ou
+                                    pandemias, têm exercido forte impacto no comportamento dos turistas. A pandemia de
+                                    covid-19, por exemplo, modificou drasticamente o comportamento de viagem, com uma
+                                    crescente preferência por destinos domésticos e ao ar livre, além de um aumento na
+                                    preocupação com protocolos de segurança e higiene por parte dos destinos. Diante
+                                    disso, notou-se uma crescente preocupação com a sustentabilidade ambiental, que tem
+                                    influenciado a decisão de compra. Os turistas estão mais conscientes e têm
+                                    demonstrado mais interesse em destinos e fornecedores com práticas sustentáveis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Motivações específicas
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                <p>O viajante também pode buscar uma viagem por motivos pontuais e interesses
+                                    específicos, como eventos, festivais, celebrações ou festividades religiosas,
+                                    retiros espirituais, competições esportivas, turismo de saúde, entre outros nichos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Encerramento</h2>
+                <p>Diante do exposto até aqui, é possível observar a necessidade de acompanhar as mudanças no
+                    comportamento do consumidor, especialmente diante de eventos globais, como epidemias e avanços
+                    tecnológicos, que alteram constantemente os hábitos de compra. Pensando nisso, veja algumas
+                    perguntas norteadoras, elencadas para análise constante do consumidor de turismo.</p>
+                <ul class="marcador-padrao">
+                    <li>Quem é o turista?</li>
+                    <li>O que ele deseja?</li>
+                    <li>O que o motiva a viajar? </li>
+                    <li>O que está influenciando sua decisão?</li>
+                    <li>Como atender às suas expectativas e necessidades? </li>
+                </ul>
+                <p>O comportamento dos viajantes é um fenômeno multifacetado, moldado por uma interação de influências
+                    econômicas, tecnológicas, sociais, culturais, psicológicas e ambientais. Ao compreender esses
+                    elementos, você poderá ajustar suas estratégias para satisfazer mais efetivamente às demandas e às
+                    expectativas dos turistas. O turista adapta-se conforme seus valores, época e sociedade, então
+                    deve-se estar preparado para fornecer serviços e produtos que atendam às suas novas necessidades
+                    frente às inúmeras variáveis que influenciam o setor.</p>
                 <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
             </div>
         </section>

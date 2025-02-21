@@ -10,6 +10,148 @@ body{
 }
 .espera-video{border: 2px solid;}
 
+.painel1{
+	background: url('../img/painel.png') no-repeat;
+	width: 903px;
+	height: 601px;
+	margin: 50px auto;
+	position: relative;
+}
+.painel1 button{
+	border: none;
+	position: absolute;
+	width: 175px;
+    height: 162px;
+	background-color: transparent;
+	z-index: 2;
+}
+.painel1 button img{
+	display: none;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	bottom: 0;
+}
+.painel1 button:hover{
+	background: transparent;
+}
+.painel1 button:hover img{
+	display: block;
+}
+.painel1 .circulo{
+	-webkit-animation: rotate-center 15s linear infinite both;
+	        animation: rotate-center 15s linear infinite both;
+	z-index: 1;
+	bottom: -8px;
+}
+
+@-webkit-keyframes rotate-center {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+}
+@keyframes rotate-center {
+	0% {
+		-webkit-transform: rotate(0);
+				transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+.bt-desejo{
+	bottom: 80px;
+    left: 53px;
+}
+.bt-pesquisa{
+	left: 71px;
+    top: 121px;
+}
+.bt-avaliacao{
+    left: 309px;
+    top: 167px;
+}
+.bt-decisao{
+	top: 22px;
+    right: 241px;
+}
+.bt-consumo{
+	bottom: -41px;
+    right: 182px;
+}
+.bt-posconsumo{
+	right: 0;
+    top: 188px;
+}
+
+.destaque-imagem{
+	background: url('../img/destaque.png') no-repeat;
+	padding: 100px 50px;
+}
+.destaque-imagem *{
+	color: #fff;
+	margin: 0;
+	text-align: center;
+}
+
 @media screen and (max-width: 1280px){
 	body{background-image: none;}
+}
+@media screen and (max-width: 980px){
+	.painel1{
+		background: url('../img/painel_mobile.png') no-repeat;
+		width: 368px;
+		height: 650px;
+	}
+	.painel1 button{
+		width: 117px;
+    	height: 88px;
+	}
+	.painel1 button:hover img{
+		display: none;
+	}
+	.bt-desejo{
+		top: 89px;
+    	left: 40px;
+	}
+	.bt-pesquisa{
+		left: 209px;
+    	top: 97px;
+	}
+	.bt-avaliacao{
+		left: 158px;
+		top: 258px;
+	}
+	.bt-decisao{
+		top: 419px;
+		right: 5px;
+	}
+	.bt-consumo{
+		bottom: 120px;
+		right: 272px;
+	}
+	.bt-posconsumo{
+		right: 89px;
+		top: unset;
+		bottom: -9px;
+	}
+	.painel1 .check.visitado::after{
+		top: 0px;
+    	right: 10px;
+	}
+}
+@media screen and (max-width: 480px){
+	.destaque-imagem{
+		background: url('../img/destaque_mobile.png') no-repeat center center;
+		background-size: cover;
+		padding: 50px;
+		padding-top: 150px;
+	}
+	
 }
