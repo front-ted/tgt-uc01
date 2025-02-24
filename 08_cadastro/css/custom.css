@@ -7,15 +7,222 @@ h2 span{font-size: 0.7em;}
 }
 .bloco1{
 	background-image: url('../img/bg_gradiente_top.png'), url('../img/div_elemento.png'), url('../img/div.png');
-	background-position: top left, bottom right 5%, bottom -10px center;
+	background-position: top left, bottom right 5%, bottom -5px center;
 	background-size: auto, 10%, contain;
 	background-repeat: no-repeat;
 	padding-top: unset;
 }
-.bloco-branco{
+.bloco2{
 	background-image: url('../img/bg_elemento2.png');
-	background-position: left 10px top 50%;
+	background-position: left 10px top 30%;
 	background-size: 15%;
 	background-repeat: no-repeat;
 	padding: 100px 0;
+}
+.bloco3{
+	background-image: url('../img/div_elemento.png'), url('../img/div2.png');
+	background-position: top right 5%, top center;
+	background-size: 10%, contain;
+	background-repeat: no-repeat;
+	padding-top: 100px;
+}
+.carousel-indicators [data-bs-target]{background-color: transparent;}
+
+.espera-video{border: 2px solid;}
+
+.infografico{
+	background: rgb(253,116,0);
+	background: linear-gradient(45deg, rgba(253,116,0,1) 0%, rgba(131,50,49,1) 100%);
+	width: 620px;
+	height: 900px;
+	margin: 50px auto;
+	border-radius: 50px 0 50px 0;
+	padding: 50px;
+	position: relative;
+}
+.infografico *{color: #fff;}
+.infografico p:first-child{
+	font-size: 1.3em;
+	text-align: center;
+	width: 100%;
+}
+.infografico::before{
+	content: '';
+	position: absolute;
+	background: url('../img/pers1.png') no-repeat;
+	width: 258px;
+	height: 251px;
+	left: -100px;
+    top: 130px;
+}
+.infografico::after{
+	content: '';
+	position: absolute;
+	background: url('../img/pers2.png') no-repeat;
+	width: 282px;
+	height: 321px;
+	right: -100px;
+    bottom: -25px;
+}
+.infografico p{
+	margin-bottom: 90px;
+	width: 70%;
+}
+.align-right{
+	margin-left: 150px;
+}
+.bloco3{
+	background-image: url(../img/div_elemento.png), url(../img/div.png), url(../img/div_elemento.png), url(../img/div2.png);
+    background-position: bottom right 5%, bottom -5px center, top right 5%, top center;
+    background-size: 10%, contain, 10%, contain;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+.bloco4{
+	background-image: url('../img/bg_elemento.png');
+	background-position: left 10px top 30%;
+	background-size: 15%;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+}
+.bloco5{
+	background-image: url(../img/div_elemento.png), url(../img/div2.png), url(../img/div_elemento.png), url(../img/div.png);
+	background-position: top right 5%, top center, bottom right 5%, bottom -5px center;
+	background-size: 10%, contain, 10%, contain;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+}
+.painel1 button{
+	border: none;
+	background-color: transparent;
+	width: 257px;
+	transition: all .6s;
+	padding-top:230px;
+	position: relative;
+	z-index: 2;
+}
+.painel1 button:hover{
+	transform: unset;
+}
+.painel1 button span{
+	border-radius: 25px;
+    border: 3px solid #fe7600;
+    background: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+	font-family: figtree;
+    font-size: 1em;
+	color: #fe7600;
+	width: 257px;
+	transition: all .6s;
+	display: block;
+	z-index: 2;
+	position: relative;
+	margin-bottom: -2px;
+}
+.painel1 button:hover span{
+    color: #fff;
+	background: #fe7600;
+}
+.bt-meiguia button{
+	background: url('../img/bt1.png') no-repeat;
+}
+.bt-meiguia button:hover{
+	background: url('../img/bt1_hover.png') no-repeat;
+}
+.bt-meiagencia button{
+	background: url('../img/bt2.png') no-repeat;
+}
+.bt-meiagencia button:hover{
+	background: url('../img/bt2_hover.png') no-repeat;
+}
+.bt-motorista button{
+	background: url('../img/bt3.png') no-repeat;
+}
+.bt-motorista button:hover{
+	background: url('../img/bt3_hover.png') no-repeat;
+}
+.painel1 > div{position: relative;}
+.painel1 > div::before{
+	content: '';
+	position: absolute;
+	background: url('../img/hover.png') no-repeat;
+	width: 245px;
+    height: 245px;
+	background-size: contain;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: none;
+	z-index: 1;
+	-webkit-animation: rotate-center 15s linear infinite both;
+	        animation: rotate-center 15s linear infinite both;
+}
+@-webkit-keyframes rotate-center {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+}
+@keyframes rotate-center {
+	0% {
+		-webkit-transform: rotate(0);
+				transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+.painel1 > div:hover::before{display: block;}
+.bloco6{
+	background-image: url('../img/bg_gradiente.png');
+	background-position: bottom right;
+	background-size: auto;
+	background-repeat: no-repeat;
+	padding-bottom: 100px;
+}
+
+@media (max-width: 1380px){
+	.bloco2, .bloco4{background-image: none;}
+}
+@media (max-width: 780px){
+	.carousel-control-prev{left: 0;}
+	.carousel-control-next{right: 0;}
+	.infografico::before{
+		width: 180px;
+		background-size: contain;
+		left: 0;
+		right:0;
+		margin:auto;
+		top: -130px;
+	}
+	.infografico::after{
+		width: 180px;
+		background-size: contain;
+		left: 0;
+		right:0;
+		bottom: -100px;
+		margin:auto;
+		height: 180px;
+	}
+	.infografico{
+		width: 100%;
+		height: auto;
+		margin-top: 200px;
+		margin-bottom: 150px;
+	}
+	.align-right{margin: unset;}
+	.infografico p{
+		margin-bottom: 50px;
+		width: 100%;
+	}
+	.bloco1{background-size: auto, 20%, contain;}
+	.bloco3{background-size: 20%, contain, 20%, contain;}
+	.bloco5{background-size: 20%, contain, 20%, contain;}
 }
