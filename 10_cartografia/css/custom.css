@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "caveat";
+    src: url("../fonts/Caveat.ttf");
+}
+body{
+	background: #f3a34c;
+	background: radial-gradient(farthest-corner at 100% 50%, rgba(243, 163, 76, 1) 0%, transparent 60%), 
+	radial-gradient(farthest-corner at 10% 10%, rgba(243, 163, 76, 1) 0%, transparent 60%), 
+	linear-gradient(120deg, rgba(243, 163, 76, 1) 0%, rgba(255,255,255,1) 40%, rgba(190, 153, 160,1) 100%);
+}
+.espera-objeto{
+	border: 2px solid #fff; 
+	height: 300px;
+	width: 100%;
+	display: block;
+}
+.bloco1{
+	background: url('../img/bg_img.jpg') no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+.bloco1 p, .bloco1 h2{color: #fff;}
+.container > h2, .container > h3{position: relative;}
+.container > h2::before, .container > h3::before{
+	content: '';
+	background: url('../img/bg_elemento1.png') no-repeat;
+	width: 285px;
+	height: 249px;
+	display: block;
+	position: absolute;
+	left: -300px
+}
+.bloco2{
+	padding: 100px 0;
+	
+}
+.postit div{
+	padding: 40px 30px;
+}
+.postit p, .postit b{
+	font-family: caveat;
+	margin-bottom: 10px;
+}
+.postit b{
+	color: #5c000f;
+	font-size: 1.1em;
+}
+.postit1{
+	background: url('../img/postit1.png') no-repeat;
+	width: 216px;
+	height: 260px;
+}
+.postit2{
+	background: url('../img/postit2.png') no-repeat;
+	width: 266px;
+	height: 315px;
+}
+.postit3{
+	background: url('../img/postit3.png') no-repeat;
+	width: 267px;
+	height: 344px;
+}
+.postit4{
+	background: url('../img/postit4.png') no-repeat;
+	width: 221px;
+	height: 261px;
+}
+.bloco3{
+	background: url('../img/bg_elemento2.png') no-repeat right top transparent;
+	background-size: 15%;
+}
+.destaque-imagem{
+
+}
+.painel1 button{
+	position: relative;
+	width: 406px;
+	height: 407px;
+	border: none;
+	background-color: transparent;
+	margin: 20px 0;
+}
+.painel1 .bt-latitude{
+	background: url('../img/bt1.png') no-repeat center;
+}
+.painel1 .bt-longitude{
+	background: url('../img/bt2.png') no-repeat center;
+}
+.painel1 button::before{
+	content: '';
+	display: none;
+	background: url('../img/bt_hover.png') no-repeat;
+	width: 406px;
+	height: 407px;
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	z-index: -1;
+	-webkit-animation: rotate-center 15s linear infinite both;
+	        animation: rotate-center 15s linear infinite both;
+}
+.painel1 button:hover::before{display: block;}
+.painel1 button span{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 265px;
+}
+.painel1 button.check.visitado::after{
+	top: 0px;
+    right: 70px;
+}
+
+@-webkit-keyframes rotate-center {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+}
+@keyframes rotate-center {
+	0% {
+		-webkit-transform: rotate(0);
+				transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+
+.gradiente li{color: #fff;}
