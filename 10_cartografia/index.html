@@ -188,7 +188,7 @@
                         </figure>
 
                         <h3>Coordenadas geográficas</h3>
-                        <div class="destaque-imagem">
+                        <div class="destaque-imagem radius my-5 mx-auto">
                             <p>No turismo, as coordenadas geográficas são essenciais para localizar destinos com
                                 precisão,
                                 especialmente em atividades que envolvem navegação, como ecoturismo, trilhas e turismo
@@ -207,7 +207,7 @@
 
                         <div class="no-print">
                             <p>Clique ou toque na tela para visualizar o conteúdo.</p>
-                            <div class="painel1">
+                            <div class="painel1 d-flex flex-wrap justify-content-evenly">
                                 <button type="button" class="bt-latitude check" data-bs-toggle="modal"
                                     data-bs-target="#modal-latitude">
                                     <span class="botao">Latitude</span>
@@ -217,66 +217,67 @@
                                     <span class="botao">Longitude</span>
                                 </button>
                             </div>
-                            <div class="modal fade" id="modal-latitude" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Latitude</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>A latitude é a medida da distância de um ponto em relação à linha do
-                                                Equador, que divide a Terra nos hemisférios Norte e Sul. Expressa-se em
-                                                graus (°), variando de 0° no Equador até 90° nos polos (Norte e Sul). Se
-                                                um local está ao Norte do Equador, sua latitude é positiva (Norte), e se
-                                                está ao Sul, sua latitude é negativa (Sul), por exemplo:</p>
-                                            <ul class="marcador-padrao">
-                                                <li>Latitude de 30°N significa que o ponto está 30 graus ao Norte do
-                                                    Equador.</li>
-                                                <li>Latitude de 45°S significa que o ponto está 45 graus ao Sul do
-                                                    Equador.</li>
-                                            </ul>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-grow-shadow"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
+                        </div>
+                        <div class="modal fade" id="modal-latitude" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Latitude</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="modal-longitude" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Longitude</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>A longitude mede a distância de um ponto em relação ao Meridiano de
-                                                Greenwich, que é o ponto de referência para as longitudes e divide o
-                                                globo em hemisférios Leste e Oeste. Também se expressa em graus (°),
-                                                variando de 0° no meridiano até 180°, seja para leste ou oeste. Se o
-                                                local está a Leste de Greenwich, a longitude é positiva, e se está a
-                                                Oeste, a longitude é negativa, por exemplo:</p>
-                                            <ul class="marcador-padrao">
-                                                <li>Longitude de 60°E significa que o ponto está 60 graus a Leste do
-                                                    Meridiano de Greenwich.</li>
-                                                <li>Longitude de 120°W significa que o ponto está 120 graus a Oeste de
-                                                    Greenwich.</li>
-                                            </ul>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-grow-shadow"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
+                                    <div class="modal-body">
+                                        <p>A latitude é a medida da distância de um ponto em relação à linha do
+                                            Equador, que divide a Terra nos hemisférios Norte e Sul. Expressa-se em
+                                            graus (°), variando de 0° no Equador até 90° nos polos (Norte e Sul). Se
+                                            um local está ao Norte do Equador, sua latitude é positiva (Norte), e se
+                                            está ao Sul, sua latitude é negativa (Sul), por exemplo:</p>
+                                        <ul class="marcador-padrao">
+                                            <li>Latitude de 30°N significa que o ponto está 30 graus ao Norte do
+                                                Equador.</li>
+                                            <li>Latitude de 45°S significa que o ponto está 45 graus ao Sul do
+                                                Equador.</li>
+                                        </ul>
+                                        <div class="modal-footer">
+                                            <button type="button" class="botao hvr-grow-shadow"
+                                                data-bs-dismiss="modal">Fechar</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="modal-longitude" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Longitude</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>A longitude mede a distância de um ponto em relação ao Meridiano de
+                                            Greenwich, que é o ponto de referência para as longitudes e divide o
+                                            globo em hemisférios Leste e Oeste. Também se expressa em graus (°),
+                                            variando de 0° no meridiano até 180°, seja para leste ou oeste. Se o
+                                            local está a Leste de Greenwich, a longitude é positiva, e se está a
+                                            Oeste, a longitude é negativa, por exemplo:</p>
+                                        <ul class="marcador-padrao">
+                                            <li>Longitude de 60°E significa que o ponto está 60 graus a Leste do
+                                                Meridiano de Greenwich.</li>
+                                            <li>Longitude de 120°W significa que o ponto está 120 graus a Oeste de
+                                                Greenwich.</li>
+                                        </ul>
+                                        <div class="modal-footer">
+                                            <button type="button" class="botao hvr-grow-shadow"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <p>Os meridianos estão relacionados com os diferentes horários no planeta, por isso o guia de
                             turismo deve conhecê-los, por meio da observação de mapas com as linhas dos meridianos e os
                             fusos horários.</p>
@@ -375,23 +376,16 @@
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Item 2
+                                        <i>Sites</i> de previsão meteorológica
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordion1">
                                     <div class="accordion-body">
-                                        <h4 class="sr-only print">Item 2</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis
-                                            nisl,
-                                            tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget
-                                            ornare
-                                            pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla.
-                                            Phasellus non
-                                            pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem
-                                            consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in
-                                            ultrices
-                                            ornare. Donec gravida pharetra odio et ultrices.</p>
+                                        <h4 class="sr-only print"><i>Sites</i> de previsão meteorológica</h4>
+                                        <p>Climatempo, INMET (Instituto Nacional de Meteorologia), Weather.com e
+                                            AccuWeather.com são <i>sites</i> confiáveis que permitem pesquisar previsões
+                                            detalhadas inserindo o nome da cidade ou o local desejado.</p>
                                     </div>
                                 </div>
                             </div>
@@ -400,27 +394,446 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        Item 3
+                                        Assistentes virtuais
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordion1">
                                     <div class="accordion-body">
-                                        <h4 class="sr-only print">Item 3</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis
-                                            nisl,
-                                            tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget
-                                            ornare
-                                            pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla.
-                                            Phasellus non
-                                            pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem
-                                            consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in
-                                            ultrices
-                                            ornare. Donec gravida pharetra odio et ultrices.</p>
+                                        <h4 class="sr-only print">Assistentes virtuais</h4>
+                                        <p>Google Assistente, Alexa ou Siri são assistentes virtuais. É possível
+                                            perguntar a eles sobre a previsão do tempo para um local específico.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Televisão ou rádio
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordion1">
+                                    <div class="accordion-body">
+                                        <h4 class="sr-only print">Televisão ou rádio</h4>
+                                        <p>Notícias locais geralmente têm segmentos de previsão do tempo, especialmente
+                                            durante os telejornais da manhã e da noite.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <h4>Simbologia cartográfica</h4>
+                        <p>Os símbolos de informação turística, assim como os mapas, permitem que o turista realize uma
+                            leitura dos espaços. A concepção dos símbolos baseia-se em pictogramas, que descrevem
+                            graficamente objetos, atividades ou conceitos por meio de desenhos figurativos, não verbais,
+                            devendo ser diretos e de fácil compreensão. A simbologia cartográfica consiste em uma
+                            combinação de recursos gráficos utilizados pela cartografia no processo de comunicação
+                            visual dos fenômenos geográficos por meio de diferentes formas de representação
+                            cartográficas, sobretudo, através de mapas (FONSECA; OLIVA, 2013 ).</p>
+
+                        <figure class="my-5">
+                            <img src="img/fig3.jpg" class="img-fluid mx-auto mb-3 d-none d-md-block radius shadow print"
+                                alt="Imagem">
+                            <a href="img/fig3.jpg" target="_blank" class="img-zoom d-block d-md-none no-print">
+                                <img src="img/fig3.jpg" class="img-fluid mx-auto mb-3 radius shadow" alt="Imagem">
+                            </a>
+                            <figcaption class="figure-caption text-center">
+                                Simbologia dos Mapas<br>
+                                Fonte: Escola Lydia Ivone
+                            </figcaption>
+                            <p class="sr-only no-print">Tabela com símbolos e cores usados em mapas. Do lado esquerdo,
+                                estão representações de vias, como metrô, rua principal, rua secundária, rio, caminho,
+                                ponte e pedágio, além de símbolos para limites de cidade, florestas e mar. No centro, há
+                                ícones para serviços e infraestruturas, como estação de ônibus, trem, aeroporto,
+                                hospital, hotel, restaurante, e áreas de lazer. Do lado direito, estão símbolos para
+                                espaços públicos, como áreas de estacionamento, parques e áreas de lazer. No canto
+                                inferior direito, há uma rosa dos ventos indicando direções.</p>
+                        </figure>
+                        <p>Para o guia de turismo, os símbolos dos mapas são uma ferramenta indispensável, pois ajudam a
+                            entender e transmitir informações precisas sobre os terrenos e identificar pontos de
+                            interesse, rotas de transporte, trilhas naturais, locais históricos e áreas de perigo ou
+                            preservação ambiental. Além de passar as informações dos símbolos aos turistas, legendas
+                            também são uma ferramenta muito importante para orientação, contribuindo para uma
+                            experiência mais enriquecedora e segura, pois os viajantes conseguem se orientar melhor e
+                            explorar o destino com mais autonomia.</p>
+
+                        <h3>Orientação nos mapas</h3>
+                        <p>As legendas nos mapas desempenham um papel crucial na comunicação visual de informações
+                            geográficas, pois são a chave para interpretar corretamente o que cada símbolo, linha, cor
+                            ou padrão representa, transformando um simples conjunto de formas gráficas em uma
+                            representação significativa do espaço geográfico. Sem legendas, seria difícil de decifrar os
+                            mapas, especialmente aqueles que contêm dados mais complexos ou específicos. Cada símbolo ou
+                            cor na legenda corresponde a um item específico, como:</p>
+                        <div class="no-print" aria-hidden="true">
+                            <p>Clique ou toque nos <i>cards</i> para visualizar o conteúdo.</p>
+                            <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner radius">
+                                        <div class="flip-card-front">
+                                            <img src="img/cardfrente_01.jpg">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="img/cardverso_01.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner radius">
+                                        <div class="flip-card-front">
+                                            <img src="img/cardfrente_02.jpg">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="img/cardverso_02.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner radius">
+                                        <div class="flip-card-front">
+                                            <img src="img/cardfrente_03.jpg">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="img/cardverso_03.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner radius">
+                                        <div class="flip-card-front">
+                                            <img src="img/cardfrente_04.jpg">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="img/cardverso_04.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="print sr-only">
+                            <p>Vias de transporte: estradas, ferrovias, metrôs.</p>
+                            <p>Recursos naturais: rios, montanhas, florestas.</p>
+                            <p>Infraestrutura: hospitais, aeroportos, postos de combustível.</p>
+                            <p>Limites territoriais: cidades, estados, países.</p>
+                        </div>
+                        <p>A legenda de um mapa oferece uma solução para decifrar símbolos, cores e escalas que
+                            representam características naturais, infraestrutura, serviços e outros elementos
+                            importantes no terreno. Contudo, mapas físicos perderam força com a chegada da era digital,
+                            surgindo tecnologias como a cartografia digital, para auxiliar na orientação de mapas e
+                            guiamentos em trilhas e áreas remotas, envolvendo GPS e aplicativos para mapeamento das
+                            áreas.</p>
+                    </div>
+                </div>
+                <div class="bloco4">
+                    <div class="container">
+                        <h3>Cartografia digital no turismo</h3>
+                        <p>Com o avanço da tecnologia, a cartografia digital tornou-se uma ferramenta indispensável no
+                            setor de turismo. A cartografia digital envolve o uso de sistemas de informação geográfica
+                            (SIG), GPS e aplicativos de mapeamento <i>on-line</i>, como o Google Maps, para criar mapas
+                            interativos e dinâmicos. Esses mapas oferecem atualizações em tempo real, navegação por GPS
+                            e informações detalhadas sobre destinos turísticos.</p>
+                        <div class="grafismo">
+                            <div class="destaque gradiente icone atencao">
+                                <p>Para os guias de turismo, a cartografia digital tem revolucionado a maneira de
+                                    planejar e conduzir excursões. Agora, é possível criar roteiros personalizados, com
+                                    informações geográficas precisas e interativas, além de acessar dados em tempo real,
+                                    como condições climáticas e trânsito. Isso permite maior flexibilidade e segurança
+                                    durante a condução de grupos.</p>
+                            </div>
+                        </div>
+                        <p>O guia de turismo utiliza a cartografia, tanto tradicional quanto digital, para desempenhar
+                            diversas funções essenciais, como:</p>
+                        <p class="no-print">Clique ou toque na tela para visualizar o conteúdo.</p>
+                        <div class="accordion mb-5" id="accordion2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                        Planejamento de roteiros
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                                    data-bs-parent="#accordion2">
+                                    <div class="accordion-body">
+                                        <h4 class="sr-only print">Planejamento de roteiros</h4>
+                                        <p>Elaborar percursos otimizados e acessíveis, evitando áreas de risco e
+                                            maximizando a experiência dos turistas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        Orientação no campo
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                    data-bs-parent="#accordion2">
+                                    <div class="accordion-body">
+                                        <h4 class="sr-only print">Orientação no campo</h4>
+                                        <p>Usar mapas e dispositivos GPS para guiar turistas por trilhas, locais
+                                            históricos ou pontos de interesse, com segurança e eficiência.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        Interpretação ambiental
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                    data-bs-parent="#accordion2">
+                                    <div class="accordion-body">
+                                        <h4 class="sr-only print">Interpretação ambiental</h4>
+                                        <p>Em passeios em áreas naturais, a cartografia ajuda a destacar características
+                                            geográficas e ecológicas, promovendo a conscientização sobre a conservação.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Inclusão da comunidade local
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                    data-bs-parent="#accordion2">
+                                    <div class="accordion-body">
+                                        <h4 class="sr-only print">Inclusão da comunidade local</h4>
+                                        <p>No turismo de base comunitária, a cartografia é usada para identificar e
+                                            valorizar pontos de interesse cultural e social, que são de importância para
+                                            a comunidade local.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>A integração da cartografia digital no turismo é um avanço crucial para a eficiência, a
+                            sustentabilidade e a qualidade das experiências turísticas, permitindo que os guias ofereçam
+                            roteiros mais detalhados e interativos, por meio de aplicativos de navegação que
+                            proporcionam satisfação aos turistas e menor impacto sobre os destinos visitados.</p>
+
+                        <h4>Aplicativos de navegação GPS</h4>
+                        <p class="no-print">Clique ou toque na tela para assistir ao vídeo.</p>
+                        <div class="espera-objeto"></div>
+                        <div class="sr-only print">
+                            <p>Como um recurso integrado, com compartilhamento de localização nas redes sociais ou rotas
+                                para caminhadas, as versões básicas são gratuitas, embora muitos deles ofereçam recursos
+                                pagos para utilização em modo <i>off-line</i>. </p>
+                            <p>Veja alguns exemplos de aplicativos:</p>
+                            <p>Google Maps: é o mais completo em recursos, fornece rotas precisas e é mais eficiente em
+                                termos de consumo de dados.</p>
+                            <p>Maps.me: é um aplicativo móvel que fornece mapas <i>off-line</i> usando dados do
+                                OpenStreetMap.
+                            </p>
+                            <p>GPS Gaia: permite a criação prévia, a gravação em tempo real e o compartilhamento de
+                                tracklogs.</p>
+                            <p>Wikiloc: permite descobrir e explorar as melhores trilhas perto de onde você está,
+                                seguindo com o auxílio de indicador de direção, bússola e alertas de som que avisam
+                                quando você se afasta da rota, sem necessidade de internet.</p>
+
+                            <figure class="my-5">
+                                <img src="img/fig4.jpg" class="img-fluid mx-auto p-2 mb-3 d-block radius print"
+                                    alt="Imagem">
+                                <figcaption class="figure-caption text-center">
+                                    Navegação Wikiloc<br>
+                                    Fonte: TABIRA ALPINA
+                                </figcaption>
+                                <p class="sr-only no-print">Imagem mostrando quatro telas do aplicativo Wikiloc. A
+                                    primeira tela exibe uma lista de rotas disponíveis, incluindo o “Caminho de
+                                    Santiago”, com informações como distância e dificuldade. A segunda tela mostra o
+                                    progresso de uma rota, com detalhes como distância restante, velocidade média e
+                                    tempo em movimento. A terceira tela exibe um mapa com a rota “Palas de Rey – Arzúa”
+                                    e um gráfico de elevação. A quarta tela apresenta estatísticas detalhadas da rota,
+                                    como distância, dificuldade, tempo estimado e elevação.</p>
+                            </figure>
+                            <p>O aplicativo auxilia guias de aventuras, trilheiros e montanhistas a se localizarem em
+                                regiões pouco exploradas pelos humanos, por meio de trilhas autoguiadas pelo aplicativo.
+                                Veja os tipos de trilhas existentes e como classificá-las.</p>
+                        </div>
+
+                        <h3>Tipos de trilhas</h3>
+                        <p>Existem diferentes tipos de trilhas, que podem ser classificadas de acordo com o traçado, a
+                            dificuldade e as características biofísicas. As trilhas podem ser circulares, em oito,
+                            lineares de ligação ou travessia, técnicas ou mistas, conforme o traçado, classificadas como
+                            fáceis, moderadas, difíceis ou muito difíceis, de acordo com a sinalização, as bifurcações e
+                            o traçado, incluindo a classificação de acordo com o esforço físico, a exposição ao risco, a
+                            orientação e a insolação. A trilha é uma atividade física aeróbica que consiste em caminhar
+                            em trilhas naturais, buscando contato com a natureza. As principais diferenças entre trilha
+                            e <i>trekking</i> são a duração, a intensidade e a complexidade da experiência.</p>
+                        <div class="no-print">
+                            <p>Clique ou toque na tela para visualizar o conteúdo.</p>
+                            <div class="painel2">
+                                <button type="button" class="bt-circular check" data-bs-toggle="modal"
+                                    data-bs-target="#modal-circular">
+                                    <span class="sr-only">Trilha circular</span>
+                                </button>
+                                <button type="button" class="bt-emoito check" data-bs-toggle="modal"
+                                    data-bs-target="#modal-emoito">
+                                    <span class="sr-only">Trilha em oito</span>
+                                </button>
+                                <button type="button" class="bt-linear check" data-bs-toggle="modal"
+                                    data-bs-target="#modal-linear">
+                                    <span class="sr-only">Trilha linear</span>
+                                </button>
+                                <button type="button" class="bt-tecnica check" data-bs-toggle="modal"
+                                    data-bs-target="#modal-tecnica">
+                                    <span class="sr-only">Trilha técnica</span>
+                                </button>
+                                <button type="button" class="bt-mista check" data-bs-toggle="modal"
+                                    data-bs-target="#modal-mista">
+                                    <span class="sr-only">Trilha mista</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-circular" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Trilha circular</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Oferece a possibilidade de volta ao ponto de partida sem repetir o percurso
+                                            no retorno.</p>
+                                        <div class="modal-footer">
+                                            <button type="button" class="botao hvr-grow-shadow"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-emoito" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Trilha em oito</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Como a circular, também termina no ponto de início, a diferença é que a
+                                            trilha em oito cruza com outros pontos intermediários do percurso.</p>
+                                        <div class="modal-footer">
+                                            <button type="button" class="botao hvr-grow-shadow"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-linear" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Trilha linear de ligação ou
+                                            travessia</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>É um percurso de ida e volta pelo mesmo lugar ou só de ida, com a função de
+                                            ligar um ponto.</p>
+                                        <div class="modal-footer">
+                                            <button type="button" class="botao hvr-grow-shadow"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-tecnica" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Trilha técnica</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>É composta por disciplinas que visam desenvolver habilidades e competências
+                                            técnicas, além de conhecimentos específicos em uma determinada área de
+                                            atuação.</p>
+                                        <div class="modal-footer">
+                                            <button type="button" class="botao hvr-grow-shadow"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-mista" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Trilha mista</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Esse tipo é formado por mais de dois tipos de traçados, oferecendo muitas
+                                            variantes ao percurso da trilha.</p>
+                                        <div class="modal-footer">
+                                            <button type="button" class="botao hvr-grow-shadow"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Práticas do guia de turismo no contexto da cartografia</h3>
+                        <p>No contexto do turismo moderno, as práticas do guia de turismo têm evoluído para incorporar
+                            tanto habilidades tradicionais quanto o uso de tecnologias avançadas, como a cartografia
+                            digital, e envolvem o planejamento detalhado dos roteiros e a prática em mapas interativos e
+                            atualizados em tempo real, com aplicativos de navegação. A cartografia digital permite ao
+                            guia ajustar as rotas em tempo real, escolher percursos mais fáceis ou desafiadores, ou
+                            ainda recomendar pontos de interesse de acordo com o que o grupo deseja explorar.</p>
+                        <p>Além disso, com o suporte de ferramentas de comunicação e cartografia digital, o guia de
+                            turismo deve atuar também como promotor de práticas sustentáveis, educando os turistas sobre
+                            a importância da conservação ambiental e cultural, com o uso de ferramentas digitais. Após
+                            compreender os desafios enfrentados por um guia sem o uso adequado da cartografia, fica
+                            evidente o papel fundamental dessa ferramenta para garantir não apenas a segurança, mas
+                            também para promover práticas responsáveis e respeitosas em relação à cultura e ao meio
+                            ambiente no turismo.</p>
+                        <div class="espera-objeto my-5"></div>
+                        <p>Os guias de turismo precisam estar preparados para lidar com emergências e imprevistos, como
+                            alterações climáticas, problemas de saúde de turistas ou mudanças na rota. O uso de sistemas
+                            de comunicação permite a rápida localização de hospitais, abrigos ou pontos de apoio, bem
+                            como a reprogramação imediata de rotas para garantir a segurança.</p>
+
+                        <h2>Encerramento</h2>
+                        <p>A cartografia tem desempenhado um papel vital no desenvolvimento do turismo. Desde os
+                            conceitos fundamentais de representação do espaço até sua evolução tecnológica, com a
+                            cartografia digital, enquanto ciência, sempre foi uma ferramenta indispensável para a
+                            navegação, o planejamento e a exploração de destinos turísticos. Com a chegada da
+                            cartografia digital, essa ferramenta se tornou ainda mais poderosa e acessível, permitindo
+                            uma navegação em tempo real e detalhada, facilitando a criação de mapas interativos, rotas
+                            otimizadas e a descoberta de novos destinos. No setor do turismo, essa tecnologia
+                            transformou a forma como turistas e profissionais lidam com a exploração de territórios,
+                            tornando a experiência mais intuitiva e segura.</p>
+                        <p>Nesse cenário, as práticas do guia de turismo também se modernizaram, incorporando o uso da
+                            cartografia digital em suas funções diárias. Além das funções tradicionais de orientação e
+                            interpretação cultural, os guias de turismo agora podem oferecer uma experiência mais
+                            personalizada, segura e rica, pois, graças ao uso dessas tecnologias, conseguem adaptar
+                            rotas em tempo real, proporcionar maior segurança aos grupos e otimizar o tempo dos
+                            visitantes, tudo com base em mapas e dados digitais. Em suma, a cartografia e sua evolução
+                            para o meio digital são fundamentais para o turismo moderno, pois não só facilitam a
+                            navegação e o planejamento, como também contribuem para a personalização e a segurança das
+                            experiências turísticas.</p>
                     </div>
                 </div>
                 <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>

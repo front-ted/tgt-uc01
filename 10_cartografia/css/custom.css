@@ -66,11 +66,22 @@ body{
 	height: 261px;
 }
 .bloco3{
-	background: url('../img/bg_elemento2.png') no-repeat right top transparent;
+	background-image: url('../img/bg_elemento2.png'), url('../img/bg_elemento3.png');
+	background-repeat: no-repeat;
+	background-position: right top, left center;
+	background-color: transparent;
 	background-size: 15%;
 }
 .destaque-imagem{
-
+	background: url('../img/destaque.png') no-repeat center;
+	width: 962px;
+	height: 286px;
+	padding: 50px;
+}
+.destaque-imagem p{
+	color: #fff;
+	text-align: center;
+	margin: 0;
 }
 .painel1 button{
 	position: relative;
@@ -135,3 +146,87 @@ body{
 }
 
 .gradiente li{color: #fff;}
+
+.flip-card {
+    width: 400px;
+    height: 400px;
+}
+.bloco4{
+	background: url('../img/bg_elemento4.png') no-repeat left top 200px transparent;
+	background-size: 15%;
+}
+.painel2{
+	background: url('../img/painel.png') no-repeat;
+	width: 843px;
+	height: 566px;
+	margin: 50px auto;
+	position: relative;
+}
+.painel2 button{
+	width: 150px;
+	height: 148px;
+	position: absolute;
+	background-color: transparent;
+	border: none;
+}
+.painel2 button:hover{
+	background: url('../img/painel_hover.png') no-repeat;
+}
+.bt-circular{
+	top: 27px;
+    left: 30px;
+}
+.bt-emoito{
+	top: 209px;
+    left: 167px;
+}
+.bt-linear{
+	top: 213px;
+    left: 352px;
+}
+.bt-tecnica{
+	top: 156px;
+    right: 155px;
+}
+.bt-mista{
+	bottom: 44px;
+    right: 25px
+}
+
+.painel2 .check.visitado::after{
+	top: 75px;
+    right: 55px;
+}
+@media (max-width: 1380px){
+	.container > h2::before, .container > h3::before{
+		background-size: contain;
+		width: 140px;
+		left: -150px;
+	}
+}
+@media (max-width: 1280px){
+	.container > h2::before, .container > h3::before{display: none;}
+	.bloco3, .bloco4{background-image: none;}
+}
+
+@media (max-width: 1080px){
+	.destaque-imagem{
+		background: url('../img/destaque_mobile.png') no-repeat center;
+		width: 431px;
+		height: 620px;
+	}
+}
+
+@media (max-width: 900px){
+	.bloco1{padding-top: 10px;}
+	.bloco2, .bloco3, .bloco4{padding: 50px 0;}
+	.bloco4{padding-top: 0;}
+	.destaque-imagem{height: auto;}
+	.painel2{
+		background: url('../img/layout_painel_mobile.png') no-repeat;
+		width: 362px;
+		height: 682px;
+		margin: 50px auto;
+		position: relative;
+	}
+}
