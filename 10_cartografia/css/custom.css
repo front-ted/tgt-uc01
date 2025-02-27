@@ -229,4 +229,36 @@ body{
 		margin: 50px auto;
 		position: relative;
 	}
+	.painel2 button{
+		width: 90px;
+		height: 90px;
+	}
+	.painel2 button:hover{background-image: unset;}
+	.bt-circular {
+		top: 116px;
+		right: 4px;
+		left: unset;
+	}
+	.bt-emoito {
+		top: 215px;
+		left: 90px;
+	}
+	.bt-linear {
+		top: 356px;
+		left: 130px;
+	}
+	.bt-tecnica {
+		top: unset;
+		bottom: 100px;
+		right: 101px;
+	}
+	.bt-mista {
+		bottom: 4px;
+		left: 10px;
+		right: unset;
+	}
+	.painel2 .check.visitado::after {
+		top: -12px;
+		right: 0;
+	}
 }
