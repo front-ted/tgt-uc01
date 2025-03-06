@@ -197,6 +197,8 @@ body{
 	top: 75px;
     right: 55px;
 }
+
+.flip-card-inner{background: transparent;}
 @media (max-width: 1380px){
 	.container > h2::before, .container > h3::before{
 		background-size: contain;

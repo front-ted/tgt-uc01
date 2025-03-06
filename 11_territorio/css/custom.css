@@ -1,0 +1,175 @@
+.espera-objeto{
+	border: 2px solid #fff; 
+	height: 300px;
+	width: 100%;
+	display: block;
+}
+.bloco{
+	padding: 50px 0;
+}
+.bloco1{
+	background: radial-gradient(farthest-corner at 0 0, rgba(243, 163, 76, 1) 0%, transparent 20%),
+	url('../img/bg1.jpg') no-repeat left 80vw center / auto 100%;
+}
+.bloco1 h2{position: relative;}
+.bloco1 h2::before{
+	content: '';
+	background: url('../img/01_ilustracao.png') no-repeat;
+	width: 266px;
+	height: 245px;
+	position: absolute;
+	left: -300px;
+}
+.bloco2{
+	background: url('../img/bg2.jpg') no-repeat right 50vw center / auto 100% #f9cb99;
+}
+.bloco2 .bt-objeto {
+    height: 300px;
+    background-size: cover;
+}
+.bloco2 .bt-objeto::before {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.bloco2 .bt-objeto::after {
+    top: 180px;
+}
+.bloco3{
+	background: radial-gradient(at left center, rgba(238, 126, 0, .5), transparent 80%),
+	url('../img/bg3.jpg') no-repeat left 85vw center / auto 100%;
+}
+.bloco4{
+	background: url('../img/bg4.jpg') no-repeat right 85vw center / auto 100% #f9cb99;
+}
+.painel1{
+	background-image: url('../img/cordapainelclicavel.png'), url('../img/cordapainelclicavel.png');
+	background-repeat: no-repeat;
+	background-position: top center, top 57% center;
+	background-size: contain;
+	height: 710px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+	align-content: space-between;
+}
+.painel1 button.check.visitado::after{
+	top: 30px;
+    right: 15px;
+}
+.painel1 button{
+	border: none;
+	position: relative;
+}
+.bt-local{
+	width: 290px;
+	height: 340px;
+	background: url('../img/01painelclicavel.png') no-repeat;
+}
+.bt-local:hover{background-image: url('../img/hover01painelclicavel.png');}
+.bt-paisagem{
+	width: 302px;
+	height: 329px;
+	background: url('../img/02painelclicavel.png') no-repeat;
+}
+.bt-paisagem:hover{background-image: url('../img/hover02painelclicavel.png');}
+.bt-patrimonio{
+	width: 307px;
+	height: 348px;
+	background: url('../img/03painelclicavel.png') no-repeat;
+}
+.bt-patrimonio:hover{background-image: url('../img/hover03painelclicavel.png');}
+.bt-tradicoes{
+	width: 297px;
+	height: 345px;
+	background: url('../img/04painelclicavel.png') no-repeat;
+}
+.bt-tradicoes:hover{background-image: url('../img/hover04painelclicavel.png');}
+.bt-simbologia{
+	width: 304px;
+	height: 344px;
+	background: url('../img/05painelclicavel.png') no-repeat;
+}
+.bt-simbologia:hover{background-image: url('../img/hover05painelclicavel.png');}
+.bt-hospitalidade{
+	width: 298px;
+	height: 329px;
+	background: url('../img/06painelclicavel.png') no-repeat;
+}
+.bt-hospitalidade:hover{background-image: url('../img/hover06painelclicavel.png');}
+.bloco5{
+	background: radial-gradient(at left bottom, rgba(238, 126, 0, .7), transparent 20%),
+	url('../img/bg5.jpg') no-repeat left 55vw center / auto 100%;
+}
+.bloco6{
+	background: url('../img/bg6.jpg') no-repeat center;
+}
+.bloco6 *{color: #fff;}
+.painel2 button{
+	width: 196px;
+	height: 290px;
+	border: none;
+	display: flex;
+    align-items: flex-end;
+	margin-bottom: 20px;
+	position: relative;
+}
+.bt-roteiros{
+	background: url('../img/botao01.png') no-repeat;
+}
+button.bt-turismo{
+	background: url('../img/botao02.png') no-repeat;
+	height: 264px;
+}
+.painel2 button span{
+	color: #ee7d00;
+	border: 2px solid #ee7d00;
+	background: #fff;
+	font-size: 18px;
+	padding: 5px;
+	width: 100%;
+	border-radius: 6px;
+	display: block;
+	text-align: center;
+}
+.painel2 button::before{
+	content: '';
+	display: none;
+	background: url('../img/hoverbotao.png') no-repeat;
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: -15px;
+	left: -25px;
+	z-index: -1;
+	-webkit-animation: rotate-center 15s linear infinite both;
+	        animation: rotate-center 15s linear infinite both;
+}
+.painel2 button:hover::before{display: block;}
+
+@-webkit-keyframes rotate-center {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+}
+@keyframes rotate-center {
+	0% {
+		-webkit-transform: rotate(0);
+				transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+
+.painel2 button.check.visitado::after{
+	top: 0px;
+    right: 70px;
+}
