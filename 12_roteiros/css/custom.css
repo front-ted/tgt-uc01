@@ -1,0 +1,84 @@
+.bloco{
+	padding: 50px 0;
+}
+body{
+	background: url('../img/bg.jpg') no-repeat center;
+	background-attachment: fixed;
+}
+.bloco1{
+	background: url('../img/bg_elemento1.png') no-repeat left center;
+	background-size: 15%;
+}
+.divisoria{
+	height: 300px;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+}
+.div1{
+	background-image: url('../img/bg_parallax.jpg');
+}
+.bloco2{
+	background: url('../img/bg_elemento2.png') no-repeat right center;
+	background-size: 15%;
+}
+.tab-content{
+	background: #fff;
+}
+.painel1 button{
+	width: 390px;
+	height: 213px;
+	border: none;
+	margin: 20px;
+}
+.bt-forfait{background: url('../img/bt1.png') no-repeat;}
+.bt-forfait:hover{background: url('../img/bt1_hover.png') no-repeat;}
+.bt-longa{background: url('../img/bt2.png') no-repeat;}
+.bt-longa:hover{background: url('../img/bt2_hover.png') no-repeat;}
+.bt-curta{background: url('../img/bt3.png') no-repeat;}
+.bt-curta:hover{background: url('../img/bt3_hover.png') no-repeat;}
+.bt-pacotes{background: url('../img/bt4.png') no-repeat;}
+.bt-pacotes:hover{background: url('../img/bt4_hover.png') no-repeat;}
+.bt-city{background: url('../img/bt5.png') no-repeat;}
+.bt-city:hover{background: url('../img/bt5_hover.png') no-repeat;}
+.bt-roteiros{background: url('../img/bt6.png') no-repeat;}
+.bt-roteiros:hover{background: url('../img/bt6_hover.png') no-repeat;}
+.bt-trekking{background: url('../img/bt7.png') no-repeat;}
+.bt-trekking:hover{background: url('../img/bt7_hover.png') no-repeat;}
+.bt-expedicoes{background: url('../img/bt8.png') no-repeat;}
+.bt-expedicoes:hover{background: url('../img/bt8_hover.png') no-repeat;}
+
+.div2{
+	background-image: url('../img/bg_parallax2.jpg');
+}
+.modal .destaque{
+	background: #fde3cc;
+}
+.bloco3{
+	background: url('../img/bg_elemento3.png'), url('../img/bg_elemento4.png');
+	background-size: 15%, 15%;
+	background-position: top 30% left, bottom 20% right;
+	background-repeat: no-repeat;
+}
+.div3{
+	background-image: url('../img/bg_parallax3.jpg');
+}
+.bloco4{
+	background: url('../img/bg_elemento5.png') no-repeat left center;
+	background-size: 15%;
+}
+.div4{
+	background-image: url('../img/bg_parallax4.jpg');
+}
+.bloco5{
+	background: url('../img/bg_elemento6.png') no-repeat center bottom 50px;
+	background-size: contain;
+	padding-bottom: 200px;
+}
+
+@media (max-width: 1280px){
+	.bloco1, .bloco2, .bloco3, .bloco4{background-image: none;}
+}
+@media (max-width: 600px){
+	.bloco5{padding-bottom: 100px;}
+}
