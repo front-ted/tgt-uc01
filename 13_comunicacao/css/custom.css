@@ -1,0 +1,46 @@
+body{
+	background: linear-gradient(120deg, #ee7d00 -20%,#fff 50%, #fff 100%);
+}
+.painel1 button{
+	width: 600px;
+	height: 131px;
+	margin: 20px auto;
+	border: none;
+	border-radius: 20px;
+	transition: all .4s;
+	position: relative;
+}
+.painel1 button:hover{transform: scale(1.1);}
+.bt-historicas{background: url('../img/bt1.jpg') no-repeat center;}
+.bt-historicas:hover{background: url('../img/bt1_hover.jpg') no-repeat center;}
+.bt-geograficas{background: url('../img/bt2.jpg') no-repeat center;}
+.bt-geograficas:hover{background: url('../img/bt2_hover.jpg') no-repeat center;}
+.gradiente *{color: #fff;}
+.bt-folder{
+	width: 207px;
+	height: 275px;
+	background: url('../img/bt_pdf.png') no-repeat;
+	transition: all .4s;
+}
+.bt-folder:hover{background: url('../img/bt_pdf_hover.png') no-repeat;}
+
+@media (max-width: 680px){
+	.painel1 button{
+		width: 365px;
+		background-size: contain;
+		height: 80px;
+	}
+
+	.bt-historicas:hover{
+		background: url('../img/bt1.jpg') no-repeat center;
+		transform: none;
+		background-size: contain;
+	}
+	.bt-geograficas:hover{
+		background: url('../img/bt2.jpg') no-repeat center;
+		transform: none;
+		background-size: contain;
+	}
+
+
+}
