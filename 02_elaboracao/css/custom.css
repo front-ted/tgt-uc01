@@ -2,9 +2,14 @@ body{
 	background: radial-gradient(farthest-corner at 0 0, rgba(255, 117, 0, 0.8) 0%, transparent 30%),
 	radial-gradient(farthest-corner at 100% 50%, rgba(255, 117, 0, 0.5) 0%, transparent 50%),
 	radial-gradient(farthest-corner at 0 100%, rgba(255, 117, 0, 0.8) 0%, transparent 30%);
-	background-image: url('../img/')
+	
 }
-
+#booklet{
+	background-image: url('../img/bg_elemento.png');
+	background-position: right 10px top;
+	background-repeat: no-repeat;
+	background-size: 15%;
+}
 .painel1 button{
 	position: relative;
 	width: 406px;
@@ -75,3 +80,99 @@ body{
 	background: url('../img/painel.png') no-repeat;
 }
 .espera-video{border: 2px solid;}
+.painel3{
+	background: url('../img/painel2_bg.png') no-repeat center;
+	height: 580px;
+	width: 475px;
+	margin: 50px auto;
+	padding-top: 30px;
+}
+.painel3 button{
+	border: none;
+	height: 91px;
+	background-color: transparent;
+	color: #fff;
+	margin-bottom: 20px;
+	transition: all .4s;
+}
+.painel3 button:hover{transform: scale(1.1);}
+.bt-online{
+	background: url('../img/painel2_bt1.png') no-repeat;
+	width: 355px;
+}
+.bt-feiras{
+	background: url('../img/painel2_bt2.png') no-repeat;
+	width: 356px;
+}
+.bt-filiacao{
+	background: url('../img/painel2_bt3.png') no-repeat;
+	width: 429px;
+}
+.bt-parcerias{
+	background: url('../img/painel2_bt4.png') no-repeat;
+	width: 380px;
+}
+.num1{
+	background: url('../img/1.png') no-repeat left top;
+	padding-left: 70px;
+	min-height: 70px;
+}
+.num2{
+	background: url('../img/2.png') no-repeat left top;
+	padding-left: 70px;
+	min-height: 70px;
+}
+.num3{
+	background: url('../img/3.png') no-repeat left top;
+	padding-left: 70px;
+	min-height: 70px;
+}
+.num4{
+	background: url('../img/4.png') no-repeat left top;
+	padding-left: 70px;
+	min-height: 70px;
+}
+.num5{
+	background: url('../img/5.png') no-repeat left top;
+	padding-left: 70px;
+	min-height: 70px;
+}
+.num6{
+	background: url('../img/6.png') no-repeat left top;
+	padding-left: 70px;
+	min-height: 70px;
+}
+.num7{
+	background: url('../img/7.png') no-repeat left top;
+	padding-left: 70px;
+	min-height: 70px;
+}
+.num8{
+	background: url('../img/8.png') no-repeat left top;
+	padding-left: 70px;
+	min-height: 70px;
+}
+.num9{
+	background: url('../img/9.png') no-repeat left top;
+	padding-left: 70px;
+	min-height: 70px;
+}
+.num10{
+	background: url('../img/10.png') no-repeat left top;
+	padding-left: 70px;
+	min-height: 70px;
+}
+.caixa-container{margin: 50px auto;}
+
+@media (max-width: 1280px){
+	#booklet{
+		background-image: none;
+	}
+}
+
+@media (max-width: 480px){
+	.painel3{
+		transform: scale(0.8);
+		margin-left: -10%;
+	}
+}
