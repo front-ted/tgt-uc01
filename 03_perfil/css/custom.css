@@ -1,0 +1,26 @@
+.bloco{position: relative;}
+.bloco.vermelho{
+	background: rgb(121,75,25);
+	background: linear-gradient(140deg, rgba(121,75,25,1) 0%, rgba(56,0,1,1) 100%);
+}
+.bloco.branco{
+	background: radial-gradient(farthest-corner at 100% 50%, rgba(255, 117, 0, 0.5) 0%, transparent 20%);
+}
+.bloco.vermelho > *{color: #fff;}
+.img-down{
+	position: absolute;
+	bottom: -2px;
+	left: -2px;
+	max-width: 20%;
+}
+.img-up{
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	max-width: 20%;
+}
+.tab-content{background: #fff;}
+.tab-content p{
+	color: #000;
+}
+.flip-card-inner{background: transparent;}
