@@ -112,10 +112,10 @@
                             ser entendida como um reflexo das mudanças sociais, culturais e econômicas ao longo do
                             tempo.</p>
                         <div class="row">
-                            <div class="col-lg-6 d-flex align-items-center">
-                                <img src="img/timeline.png">
+                            <div class="d-none col-lg-6 d-lg-flex align-items-center">
+                                <img src="img/timeline.png" class="no-print" aria-hidden="true">
                             </div>
-                            <div class="col-lg-6">
+                            <div class="linha-mobile col-6">
                                 <p>Ela surge na Antiguidade, quando os guias eram fundamentais, inicialmente para fins
                                     militares, orientando exércitos em territórios desconhecidos. Com o tempo, a função
                                     foi se moldando, passando a servir viajantes e peregrinos, como na Idade Média,
@@ -488,49 +488,127 @@
                             empreendedor individual. Veja a seguir as diferenças desses formatos de trabalho. </p>
                         <div class="no-print">
                             <p>Clique ou toque na tela para visualizar o conteúdo.</p>
-                            <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                                data-bs-target="#modal1">
-                                Trabalhador autônomo
-                            </button>
-                            <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                                data-bs-target="#modal1">
-                                Microempreendedor Individual – MEI
-                            </button>
-                            <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                                data-bs-target="#modal1">
-                                Relação de emprego
-                            </button>
-
-                            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal simples</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis
-                                                nisl,
-                                                tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget
-                                                ornare
-                                                pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla.
-                                                Phasellus non
-                                                pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id
-                                                sem
-                                                consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in
-                                                ultrices
-                                                ornare. Donec gravida pharetra odio et ultrices.</p>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-grow-shadow"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
+                            <div class="d-flex painel1 my-5 justify-content-center justify-content-sm-between flex-wrap">
+                                <div class="bt-autonomo">
+                                    <button type="button" class="check" data-bs-toggle="modal"
+                                        data-bs-target="#modal-autonomo">
+                                        <span class="botao">Trabalhador autônomo</span>
+                                    </button>
+                                </div>
+                                <div class="bt-microempreendedor">
+                                    <button type="button" class="check" data-bs-toggle="modal"
+                                        data-bs-target="#modal-microempreendedor">
+                                        <span class="botao">Microempreendedor Individual – MEI</span>
+                                    </button>
+                                </div>
+                                <div class="bt-relacao">
+                                    <button type="button" class="check" data-bs-toggle="modal"
+                                        data-bs-target="#modal-relacao">
+                                        <span class="botao">Relação de emprego</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-autonomo" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Trabalhador autônomo</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Muitos guias de turismo optam por atuar como trabalhadores autônomos, podendo prestar serviços a várias empresas (agências e operadoras). Esse tipo de trabalhador exerce sua atividade profissional por conta própria, sem horários, nem receber salário fixo, mas sim renumeração acordada pelo guiamento. Nesse sentido, o guia de turismo não terá uma relação de emprego, visto que não é subordinado a quem o contratou, podendo exercer sua atividade com horários e dias mais flexíveis. Entretanto, esse tipo de contratação não envolve vínculo trabalhista, e a principal característica dessa modalidade é a independência, pois sua atuação não está subordinada a um empregador. Se você optar pela atuação de forma autônoma, deverá inscrever-se no Cadastro de Contribuintes do Município e recolher o ISS e o INSS como contribuinte individual para obter os benefícios da Previdência Social em casos temporários, como doenças, acidentes e maternidade, ou ainda permanentes, como morte, invalidez e velhice. É recomendada a leitura do material sobre “Cadastro de Prestadores de Serviços Turísticos (Cadastur)”, pois lá há conteúdo sobre MEI para Guias de Turismo autônomos. </p>
+                                        <div class="modal-footer">
+                                            <button type="button" class="botao hvr-grow-shadow"
+                                                data-bs-dismiss="modal">Fechar</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="modal-microempreendedor" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Microempreendedor Individual – MEI</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>É a pessoa que trabalha por conta própria e se legaliza como pequeno empresário. Para estar nessa categoria, é necessário faturar até o valor máximo de R$ 81 mil por ano (fique atento às atualizações desses valores), além de não possuir participação em outra empresa como sócio ou titular. Ao aderir à Lei Complementar nº 128/2008, o microempreendedor passa ter registro no Cadastro Nacional de Pessoa Jurídica (CNPJ), além da isenção de alguns tributos federais e cobertura previdenciária. Todo o processo de formalização é gratuito. Outras informações, você pode conferir no material sobre “Cadastro de Prestadores de Serviços Turísticos (Cadastur)”, com conteúdo sobre MEI para agências de turismo. </p>
+                                        <div class="modal-footer">
+                                            <button type="button" class="botao hvr-grow-shadow"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-relacao" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Relação de emprego</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Nesse caso, o guia é subordinado ao empregador. Esse vínculo distingue a relação de emprego de outras relações de trabalho, pois atende aos elementos fáticos-jurídicos que configuram uma relação de emprego, como: prestação de trabalho por pessoa física a um tomador de serviço qualquer (podendo ser pessoa física ou jurídica); prestação efetuada com pessoalidade pelo trabalhador; caráter não eventual da prestação; subordinação e prestação efetuada com onerosidade. De acordo com a Consolidação das Leis Trabalhistas (CLT), é necessário proteger o trabalhador com superioridade jurídica a fim de compensar sua inferioridade econômica em relação ao empregador, e essa proteção ocorre através do documento carteira de trabalho. Esse é o formato menos comum na profissão de guia de turismo, porém destinos turísticos consolidados, que recebem fluxo de turistas diariamente, podem ter guias de turismo que trabalhem fixo para uma mesma empresa no formato de relação de emprego. Nesse caso, você seguirá a jornada de trabalho e as atribuições listadas na descrição de cargos da empresa.</p>
+                                        <div class="modal-footer">
+                                            <button type="button" class="botao hvr-grow-shadow"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p>No trabalho como profissional autônomo, comum na profissão de guia de turismo, a remuneração acontecerá no formato de diária de trabalho. Ao contrário da relação de emprego, na qual é acordado um salário mensal para o guia de turismo com vínculo empregatício na empresa, os valores pagos para o profissional autônomo são de acordo com a jornada de trabalho executada. É comum a cobrança para serviços prestados com duração de 4, 6 ou 8 horas. É a chamada “diária de trabalho” na profissão. Os sindicatos regionais de guias de turismo são responsáveis por organizar a tabela de valores sugeridas para a cobrança dos serviços de guiamento e acompanhamento de pessoas e grupos, atendendo às realidades regionais conforme salários, custo de vida e outros fatores. A seguir, veja a tabela do Sindicato de Guias de Turismo do Estado de São Paulo.</p>
+                        <figure class="my-5">
+                            <img src="img/img.jpg" class="img-fluid mx-auto mb-3 d-none d-md-block radius shadow print"
+                                alt="Imagem">
+                            <a href="img/img.jpg" target="_blank" class="img-zoom d-block d-md-none no-print">
+                                <img src="img/img.jpg" class="img-fluid mx-auto mb-3 radius shadow" alt="Imagem">
+                            </a>
+                            <figcaption class="figure-caption text-center">
+                                Tabela referencial de remuneração dos guias de turismo do estado de São Paulo<br>
+                                Fonte: Sindegtur SP (2024)
+                            </figcaption>
+                            <p class="sr-only no-print">Tabela intitulada “Tabela Referencial de Remuneração dos Guias de Turismo do Estado de São Paulo”, fornecida pelo Sindicato Estadual dos Guias de Turismo de São Paulo. A tabela exibe diferentes tipos de serviços prestados por guias de turismo, divididos em colunas que indicam o valor para “trabalhos em português” e “trabalhos em outros idiomas”, além de uma coluna de “observações”. Principais informações da tabela: Transfer in/out (CGH, GRU e VCP): R$ 100 por hora (em português) e R$ 126 por hora (em outros idiomas), com mínimo de 3 horas de serviço; Transfer in/out: R$ 137 por hora (em português) e R$ 172 por hora (em outros idiomas), mínimo de 5 horas de serviço; City tours (3, 4 e 8 horas): valores variam entre R$ 237 e R$ 758 (em português) e R$ 298 a R$ 953 (em outros idiomas), dependendo da duração do tour; Coordenação de grupos: R$ 126 por hora (em português) e R$ 158 por hora (em outros idiomas), mínimo de 3 horas de serviço; Guia com veículo próprio: R$ 168 por hora; Viagens nacionais: R$ 506 por diária (em português) e R$ 632 por diária (em outros idiomas), com observações sobre acréscimos para refeições; Internacionais América do Sul: USD$ 150 por diária; Observações adicionais incluem valores extras para refeições (café, almoço e jantar) e despesas de hospedagem. </p>
+                        </figure>
+                        <p>Perceba, na tabela, que são descritos valores diferenciados de acordo com o tipo de serviço prestado, o tempo de duração da atividade e o idioma empregado nos serviços. A tabela é uma referência para que os profissionais possam guiar-se por ela no momento de cobrar pelo seu trabalho, porém não é obrigatória a prática desses valores, podendo ser acordados valores superiores ou inferiores aos descritos. No entanto, é importante valorizar a categoria de guias de turismo, estabelecendo vínculos efetivos com os sindicatos e a luta por melhorias nas condições de trabalho.  </p>
+                        <p>Outro fator importante é atentar-se para a sua realidade regional, lembre-se de que cada estado é responsável por estabelecer sua tabela referencial, sendo assim, verifique no sindicato de guias de turismo da sua região quais são os valores praticados. Ao cobrar pelos seus serviços, considere os custos com deslocamento, alimentação e hospedagem, de acordo com o roteiro de viagem e as combinações feitas com a agência/operadora de turismo.</p>
+                    </div>
+                </div>
+                <div class="bloco vermelho">
+                    <img src="img/div_up.png" class="img-up no-print" aria-hidden="true">
+                    <div class="container">
+                        <h3>Formação profissional</h3>
+                        <p>A formação do guia de turismo no Brasil é reconhecida em nível técnico e deve atender a uma série de critérios estabelecidos pelo Ministério da Educação (MEC) e pela Secretaria de Educação Profissional e Tecnológica (SETEC). O curso técnico de guia de turismo, que envolve uma carga horária mínima de 800 horas, inclui temas como geografia, história, legislação e técnicas de guiamento, com foco em preparar o profissional para atuar em diferentes contextos turísticos. </p>
+                        <p>Essa formação técnica, além de atender às exigências legais, prepara o profissional para lidar com as complexidades do turismo contemporâneo, que exige do guia de turismo competências distintas e das mais variadas naturezas, como preparo físico para desenvolver atividades de caminhadas em ambientes urbanos ou naturais, comunicação clara e objetiva no trato das informações, inteligência emocional para lidar com situações adversas, conhecimentos em primeiros socorros e legislação nacional e internacional para prestar assistência às pessoas, além de conhecimento em história e geografia, entre outros conhecimentos específicos do nicho de atuação do profissional.</p>
+                        <p class="paragrafo-destaque">A profissão também requer um <b>constante processo de atualização e capacitação</b>, considerando as mudanças no mercado de turismo, as novas demandas dos turistas e as regulamentações legais impostas pelos órgãos federais, estaduais e municipais. </p>
+                        <div class="row mb-5">
+                            <div class="col-12 col-md-6">
+                                <p>Desse modo, a formação continuada é essencial para o profissional, pois o turismo é uma área em constante evolução, em que o conhecimento histórico, cultural e natural precisa ser atualizado e ampliado para atender às demandas de turistas cada vez mais exigentes e informados. Cursos e leituras voltados aos aspectos históricos e culturais das regiões visitadas permitem que o guia forneça informações detalhadas e contextualizadas, enriquecendo a experiência do turista. Além disso, a compreensão profunda da geografia e da natureza local é fundamental para a realização de atividades ao ar livre, garantindo a segurança e a qualidade das informações transmitidas.</p>
+                                <p>Outro aspecto importante é a atualização em idiomas, já que o turismo internacional exige que o guia se comunique de forma clara e eficaz com turistas de diferentes nacionalidades. Cursos de idiomas são indispensáveis para ampliar as oportunidades de atuação do guia e facilitar a interação com o público. Nesse caso, verifique a realidade da sua região e a necessidade de se qualificar em determinado idioma, isso inclui a linguagem brasileira de sinais (Libras), tornando seu trabalho mais acessível para diferentes perfis de públicos. Além disso, investir em habilidades de dicção e oratória contribui para que você transmita informações de maneira envolvente e assertiva, proporcionando ao turista uma experiência mais fluida e agradável.</p>
+                            </div>
+                            <div class="d-none col-md-6 d-md-block">
+                                <img src="img/figura.jpg" class="img-fluid no-print radius shadow " aria-hidden="true">
+                            </div>
+                        </div>
+                        <p>Por fim, o aperfeiçoamento profissional também passa por desenvolver novas competências em tecnologias e mídias digitais, que são cada vez mais utilizadas na promoção de destinos e no atendimento aos clientes. Estar atualizado sobre as tendências de mercado, frequentar cursos e participar de eventos do setor de turismo podem ajudá-lo a se destacar e garantir um serviço de qualidade. A formação continuada é, portanto, não apenas uma necessidade, mas um diferencial competitivo na sua carreira como guia de turismo. </p>
+                    </div>
+                    <img src="img/div_down.png" class="img-down no-print" aria-hidden="true">
+                </div>
+                <div class="bloco">
+                    <div class="container">
+                        <h2>Encerramento</h2>
+                        <p>Conhecer as suas atribuições e os diferentes tipos de serviço, como <i>city tours</i> e excursões nacionais ou internacionais, é fundamental para que você possa atender as diferentes demandas do mercado de trabalho no setor do turismo. Esse mercado está em constante expansão e evolução, com diversas oportunidades de atuação para o guia de turismo que busca se especializar e inovar. Ao investir em formação e capacitação, você poderá explorar áreas específicas, como turismo de aventura, ecoturismo, turismo de pesca, entre outras possibilidades, ampliando seu leque de serviços e agregando valor ao seu trabalho.  </p>
+                        <p>Por isso, o conhecimento profundo de sua região e o que ela tem a oferecer, bem como a habilidade de se adaptar a diferentes contextos, são decisivos para o sucesso na carreira. Não limite sua formação como guia de turismo ao básico, continue buscando novos conhecimentos e especializações que possam enriquecer sua prática profissional. Invista em cursos, capacitações e experiências que aprimorem suas habilidades e ampliem suas possibilidades de atuação, tornando suas conduções mais atrativas e seguras para os turistas. </p>
                     </div>
                 </div>
                 <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>

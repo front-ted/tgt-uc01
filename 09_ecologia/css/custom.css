@@ -1,0 +1,281 @@
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(140deg, rgba(255,255,255,1) 0%, rgba(247,191,130,1) 100%);
+    background-attachment: fixed;
+}
+.box-titulo{
+    width: 100%;
+    height: 251px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    color: #fff;
+}
+.bg-titulo1{background: url('../img/capa01.jpg') no-repeat;}
+.bg-titulo2{background: url('../img/capa02.jpg') no-repeat;}
+.bg-titulo3{background: url('../img/capa03.jpg') no-repeat;}
+.bg-titulo4{background: url('../img/capa04.jpg') no-repeat;}
+.bg-titulo5{background: url('../img/capa05.jpg') no-repeat;}
+.bg-titulo6{background: url('../img/capa06.jpg') no-repeat;}
+.bg-titulo7{background: url('../img/capa07.jpg') no-repeat;}
+.bg-titulo8{background: url('../img/capa08.jpg') no-repeat;}
+.bg-titulo9{background: url('../img/capa09.jpg') no-repeat;}
+.painel1{
+    width: 624px;
+    height: 624px;
+    margin: 50px auto;
+    background: url('../img/painel_bg.png') no-repeat;
+    position: relative;
+}
+.painel1 button{
+    position: absolute;
+    width: 175px;
+    height: 60px;
+}
+.bt-reduzir{
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 20px;
+}
+.bt-repensar{
+    left: 55px;
+    bottom: 40px;
+}
+.bt-reutilizar{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -40px;
+}
+.bt-reciclar{
+    right: 55px;
+    bottom: 40px;
+}
+.bt-recusar{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -40px;
+}
+
+/* INICIO PAINEL CLICAVEL 2 */
+.painel2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bt-painel2 {
+    border: none;
+    width: 128px;
+    height: 128px;
+    transition: transform 0.3s ease;
+}
+
+.bt-painel2:hover {
+    transform: scale(1.1);
+}
+
+.bt18-painel2:hover {
+    transform: none;
+}
+
+.bt1-painel2 {
+    background-image: url(../img/painelODS_bt1.png);
+}
+
+.bt2-painel2 {
+    background-image: url(../img/painelODS_bt2.png);
+}
+
+.bt3-painel2 {
+    background-image: url(../img/painelODS_bt3.png);
+}
+
+.bt4-painel2 {
+    background-image: url(../img/painelODS_bt4.png);
+}
+
+.bt5-painel2 {
+    background-image: url(../img/painelODS_bt5.png);
+}
+
+.bt6-painel2 {
+    background-image: url(../img/painelODS_bt6.png);
+}
+
+.bt7-painel2 {
+    background-image: url(../img/painelODS_bt7.png);
+}
+
+.bt8-painel2 {
+    background-image: url(../img/painelODS_bt8.png);
+}
+
+.bt9-painel2 {
+    background-image: url(../img/painelODS_bt9.png);
+}
+
+.bt10-painel2 {
+    background-image: url(../img/painelODS_bt10.png);
+}
+
+.bt11-painel2 {
+    background-image: url(../img/painelODS_bt11.png);
+}
+
+.bt12-painel2 {
+    background-image: url(../img/painelODS_bt12.png);
+}
+
+.bt13-painel2 {
+    background-image: url(../img/painelODS_bt13.png);
+}
+
+.bt14-painel2 {
+    background-image: url(../img/painelODS_bt14.png);
+}
+
+.bt15-painel2 {
+    background-image: url(../img/painelODS_bt15.png);
+}
+
+.bt16-painel2 {
+    background-image: url(../img/painelODS_bt16.png);
+}
+
+.bt17-painel2 {
+    background-image: url(../img/painelODS_bt17.png);
+}
+
+.bt18-painel2 {
+    background-image: url(../img/painelODS_bt18.png);
+    pointer-events: none;
+}
+
+/* FIM PAINEL CLICAVEL 2 */
+
+/* INÍCIO PAINEL CLICAVEL 3 */
+.painel3 button{
+	border: none;
+	background-color: transparent;
+	width: 257px;
+	transition: all .6s;
+	padding-top:185px;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 30px;
+}
+.painel3 button:hover{
+	transform: unset;
+}
+.painel3 button span{
+	border-radius: 25px;
+    border: 3px solid #fe7600;
+    background: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+	font-family: figtree;
+    font-size: 1em;
+	color: #fe7600;
+	width: 257px;
+	transition: all .6s;
+	display: flex;
+	z-index: 2;
+	position: relative;
+	margin-bottom: -2px;
+	height: 86px;
+	align-items: center;
+    justify-content: center;
+}
+.painel3 button:hover span{
+    color: #fff;
+	background: #fe7600;
+}
+.bt-environmental button{
+	background: url('../img/bg_e.png') no-repeat;
+}
+.bt-social button{
+	background: url('../img/bt_s.png') no-repeat;
+}
+.bt-governance button{
+	background: url('../img/bt_g.png') no-repeat;
+}
+.painel3 > div{position: relative;}
+.painel3 > div::before{
+	content: '';
+	position: absolute;
+	background: url('../img/hover.png') no-repeat;
+	width: 245px;
+    height: 245px;
+	background-size: contain;
+	top: -5px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: none;
+	z-index: 1;
+	-webkit-animation: rotate-center 15s linear infinite both;
+	        animation: rotate-center 15s linear infinite both;
+}
+@-webkit-keyframes rotate-center {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+}
+@keyframes rotate-center {
+	0% {
+		-webkit-transform: rotate(0);
+				transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+.painel3 > div:hover::before{display: block;}
+
+/* FIM PAINEL CLICAVEL 3 */
+
+.destaque-imagem{
+	padding: 50px;
+	margin: 50px auto;
+}
+.destaque-imagem p{
+	color: #fff;
+	margin: 0;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+.destaque1{background: url('../img/dest1.jpg') no-repeat center; padding-right: 30%;}
+.destaque2{background: url('../img/dest2.jpg') no-repeat center; padding-left: 30%;}
+.destaque3{background: url('../img/dest3.jpg') no-repeat center; padding-right: 30%;}
+
+@media (max-width: 780px){
+    .painel1{
+        width: 400px;
+        height: 670px;
+        background: url('../img/painel_bg_mobile.png') no-repeat top center;
+        background-size: contain;
+        padding-top: 430px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .painel1 button{
+        position: unset;
+        margin: unset;
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+    }
+}
+@media (max-width: 450px){
+    .painel1{
+        transform: scale(0.9);
+        margin: -20px;
+    }
+}

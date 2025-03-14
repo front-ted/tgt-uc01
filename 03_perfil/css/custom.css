@@ -4,7 +4,7 @@
 	background: linear-gradient(140deg, rgba(121,75,25,1) 0%, rgba(56,0,1,1) 100%);
 }
 .bloco.branco{
-	background: radial-gradient(farthest-corner at 100% 50%, rgba(255, 117, 0, 0.5) 0%, transparent 20%);
+	background: radial-gradient(farthest-corner at 100% 50%, rgba(255, 117, 0, 0.5) 0%, transparent 40%);
 }
 .bloco.vermelho > *{color: #fff;}
 .img-down{
@@ -24,3 +24,108 @@
 	color: #000;
 }
 .flip-card-inner{background: transparent;}
+.painel1 button{
+	border: none;
+	background-color: transparent;
+	width: 257px;
+	transition: all .6s;
+	padding-top:185px;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 30px;
+}
+.painel1 button:hover{
+	transform: unset;
+}
+.painel1 button span{
+	border-radius: 25px;
+    border: 3px solid #fe7600;
+    background: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+	font-family: figtree;
+    font-size: 1em;
+	color: #fe7600;
+	width: 257px;
+	transition: all .6s;
+	display: flex;
+	z-index: 2;
+	position: relative;
+	margin-bottom: -2px;
+	height: 86px;
+	align-items: center;
+    justify-content: center;
+}
+.painel1 button:hover span{
+    color: #fff;
+	background: #fe7600;
+}
+.bt-autonomo button{
+	background: url('../img/bt1.png') no-repeat;
+}
+.bt-microempreendedor button{
+	background: url('../img/bt2.png') no-repeat;
+}
+.bt-relacao button{
+	background: url('../img/bt3.png') no-repeat;
+}
+.painel1 > div{position: relative;}
+.painel1 > div::before{
+	content: '';
+	position: absolute;
+	background: url('../img/hover.png') no-repeat;
+	width: 245px;
+    height: 245px;
+	background-size: contain;
+	top: -5px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: none;
+	z-index: 1;
+	-webkit-animation: rotate-center 15s linear infinite both;
+	        animation: rotate-center 15s linear infinite both;
+}
+@-webkit-keyframes rotate-center {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+}
+@keyframes rotate-center {
+	0% {
+		-webkit-transform: rotate(0);
+				transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+.painel1 > div:hover::before{display: block;}
+
+@media (max-width: 980px){
+	.img-down, .img-up{display: none;}
+	.linha-mobile{
+		background: url('../img/mobile_timeline.png') no-repeat;
+		width: 430px;
+		height: 1374px;
+		margin: 50px auto;
+		padding-left: 35px;
+		padding-top: 110px;
+	}
+	.linha-mobile p{
+		font-size: .9em;
+		margin-bottom: 125px;
+	}
+}
+@media (max-width: 450px){
+	.linha-mobile p{
+		font-size: .8em;
+		margin-bottom: 170px;
+	}
+}
