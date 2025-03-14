@@ -1,0 +1,9 @@
+body{
+	background: rgb(252,214,133);
+	background: radial-gradient(farthest-corner at 100% 50%, rgba(255, 117, 0, 0.3) 0%, transparent 30%),
+	linear-gradient(140deg, rgba(252,214,133,1) 0%, rgba(255,255,255,1) 100%);
+}
+.espera-video{border: 2px solid;}
+.pagina1{
+	background: url('../img/pg1_img_lateral_1.png') no-repeat right 10px top 100px / 15%;
+}
