@@ -465,7 +465,8 @@ tbody td:first-child{border-left: 0;}
 }
 .destaque{
     border-radius: 25px;
-    margin: 100px 0;
+    margin: 50px 0;
+    margin-bottom: 100px;
     padding: 40px;
     background: #fff;
     position: relative;

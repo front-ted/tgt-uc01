@@ -1,9 +1,188 @@
 body{
 	background: rgb(252,214,133);
-	background: radial-gradient(farthest-corner at 100% 50%, rgba(255, 117, 0, 0.3) 0%, transparent 30%),
+	background: radial-gradient(farthest-corner at 100% 50%, rgba(255, 117, 0, 0.4) 0%, transparent 20%),
 	linear-gradient(140deg, rgba(252,214,133,1) 0%, rgba(255,255,255,1) 100%);
 }
 .espera-video{border: 2px solid;}
 .pagina1{
-	background: url('../img/pg1_img_lateral_1.png') no-repeat right 10px top 100px / 15%;
+	background: url('../img/pg1_img_lateral_3.png') no-repeat right 10px bottom 100px / 15%,
+	url('../img/pg1_img_lateral_2.png') no-repeat left 10px center / 15%,
+	url('../img/pg1_img_lateral_1.png') no-repeat right 10px top 100px / 15%;
+}
+.destaque.icone.positivo::before{
+	background: url('../img/pg1_ico_pos.png') no-repeat;
+	background-size: contain;
+}
+.destaque.icone.negativo::before{
+	background: url('../img/pg1_ico_neg.png') no-repeat;
+	background-size: contain;
+}
+
+.painel1{
+	background: url('../img/pg2_pc_tablet.png') no-repeat;
+	width: 955px;
+	height: 1285px;
+	margin: 50px auto;
+	padding: 100px;
+}
+.painel1 button,
+.painel2 button,
+.painel3 button{
+	border: none;
+	background-color: transparent;
+	width: 235px;
+	transition: all .6s;
+	padding-top: 185px;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 30px;
+}
+.painel1 button:hover,
+.painel2 button:hover,
+.painel3 button:hover{
+	transform: unset;
+}
+.painel1 button span, 
+.painel2 button span,
+.painel3 button span{
+	border-radius: 25px;
+    border: 3px solid #fe7600;
+    background: #fff;
+    padding: 10px 0;
+    font-weight: bold;
+	font-family: figtree;
+    font-size: 1em;
+	color: #fe7600;
+	width: 235px;
+	transition: all .6s;
+	display: flex;
+	z-index: 2;
+	position: relative;
+	margin-bottom: -2px;
+	height: 40px;
+	align-items: center;
+    justify-content: center;
+}
+
+.bt-hotel button{background: url('../img/pg2_painel1_b1.png') no-repeat center top;}
+.bt-resort button{background: url('../img/pg2_painel1_b2.png') no-repeat center top;}
+.bt-fazenda button{background: url('../img/pg2_painel1_b3.png') no-repeat center top;}
+.bt-cama button{background: url('../img/pg2_painel1_b4.png') no-repeat center top;}
+.bt-pousada button{background: url('../img/pg2_painel1_b5.png') no-repeat center top;}
+.bt-historico button{background: url('../img/pg2_painel1_b6.png') no-repeat center top;}
+.bt-flat button{background: url('../img/pg2_painel1_b7.png') no-repeat center top;}
+.bt-glamping button{background: url('../img/pg2_painel1_b8.png') no-repeat center top;}
+.bt-hostel button{background: url('../img/pg2_painel1_b9.png') no-repeat center top;}
+.bt-casas button{background: url('../img/pg2_painel1_b10.png') no-repeat center top;}
+.bt-acampamentos button{background: url('../img/pg2_painel1_b11.png') no-repeat center top;}
+
+.painel1 > div, .painel2 > div{position: relative;}
+.painel1 > div::before, 
+.painel2 > div::before, 
+.painel3 > div::before{
+	content: '';
+	position: absolute;
+	background: url('../img/hover.png') no-repeat;
+	width: 245px;
+    height: 245px;
+	background-size: contain;
+	top: -5px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: none;
+	z-index: 1;
+	-webkit-animation: rotate-center 15s linear infinite both;
+	        animation: rotate-center 15s linear infinite both;
+}
+@-webkit-keyframes rotate-center {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+}
+@keyframes rotate-center {
+	0% {
+		-webkit-transform: rotate(0);
+				transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+.painel1 > div:hover::before,
+.painel2 > div:hover::before,
+.painel3 > div:hover::before{display: block;}
+
+.bt-aereo button{background: url('../img/pg2_painel2_img01.png') no-repeat center;}
+.bt-rodoviario button{background: url('../img/pg2_painel2_img02.png') no-repeat center;}
+.bt-ferroviario button{background: url('../img/pg2_painel2_img03.png') no-repeat center;}
+.bt-maritimo button{background: url('../img/pg2_painel2_img04.png') no-repeat center;}
+
+.pagina3{
+	background: url('../img/pg3_img_lateral1.png') no-repeat right 10px top 100px / 15%;
+}
+.painel3{
+	background: url('../img/pg3_painel_bg.png') no-repeat right bottom;
+	width: 910px;
+	height: 540px;
+	margin: 50px auto;
+	padding-right: 50%;
+}
+.bt-recursos button{background: url('../img/pg3_painel_bt1.png') no-repeat center;}
+.bt-atrativos button{background: url('../img/pg3_painel_bt2.png') no-repeat center;}
+.bt-equipamentos button{background: url('../img/pg3_painel_bt3.png') no-repeat center;}
+.bt-infraestrutura button{background: url('../img/pg3_painel_bt4.png') no-repeat center;}
+
+.bt-recursos button.visitado, 
+.bt-recursos button:hover{background: url('../img/pg3_painel_bt1_hover.png') no-repeat center;}
+.bt-atrativos button.visitado, 
+.bt-atrativos button:hover{background: url('../img/pg3_painel_bt2_hover.png') no-repeat center;}
+.bt-equipamentos button.visitado, 
+.bt-equipamentos button:hover{background: url('../img/pg3_painel_bt3_hover.png') no-repeat center;}
+.bt-infraestrutura button.visitado, 
+.bt-infraestrutura button:hover{background: url('../img/pg3_painel_bt4_hover.png') no-repeat center;}
+
+.painel3 button{
+	width: 210px;
+}
+.painel3 button span{
+	height: 70px;
+	width: 210px;
+}
+.painel3 .check.visitado::after{display: none;}
+
+
+@media (max-width: 1280px){
+	.pagina1, .pagina3{background: none;}
+}
+@media (max-width: 1000px){
+	.painel1{
+		background: none;
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+	.painel1 button{margin: 20px !important;}
+}
+@media (max-width: 940px){
+	.painel3{
+		background: url('../img/pg3_painel_bg_mobile.png') no-repeat center bottom;
+		width: 461px;
+		height: 950px;
+		padding-bottom: 380px;
+		padding-right: 0;
+	}
+}
+@media (max-width: 500px){
+	.painel3{
+		transform: scale(0.8);
+		margin: -50px;
+		margin-top: -80px;
+	}
 }
