@@ -1,0 +1,180 @@
+body{
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,125,0,0.2) 100%);
+}
+.bloco1{
+	background: url('../img/bg1.jpg') no-repeat;
+	background-size: cover;
+	background-position: bottom right;
+}
+.bloco1 h2, .bloco1 p{color: #fff;}
+h2 span{
+	font-size: 0.7em;
+    display: block;
+}
+.fundo1{background: url('../img/destaque.jpg') no-repeat;}
+.fundo1 p{
+	color: #fff;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+.painel1 button{
+	position: relative;
+	width: 262px;
+	height: 262px;
+	border: none;
+	background-color: transparent;
+	margin: 20px 0;
+}
+.painel1 button::before{
+	content: '';
+	display: none;
+	background: url('../img/hover.png') no-repeat;
+	width: 262px;
+	height: 262px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	-webkit-animation: rotate-center 15s linear infinite both;
+	        animation: rotate-center 15s linear infinite both;
+}
+.painel1 button:hover::before{display: block;}
+.painel1 button span{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 270px;
+	height: 60px;
+}
+.painel1 button.check.visitado::after{
+	top: 85px;
+    right: 0px;
+}
+
+@-webkit-keyframes rotate-center {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+}
+@keyframes rotate-center {
+	0% {
+		-webkit-transform: rotate(0);
+				transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+
+.destaque.lei{
+	background: #303030;
+	position: relative;
+	margin-top: 200px;
+	margin-bottom: 50px;
+}
+.destaque.lei *{color: #fff;}
+.destaque.lei::before{
+	position: absolute;
+	content: '';
+	background: url('../img/destaque_leis.png') no-repeat;
+	width: 331px;
+	height: 249px;
+	top: -180px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.bloco2{
+	background: url('../img/bg2.jpg') no-repeat;
+	background-size: cover;
+	background-position: bottom right;
+}
+.bloco2 h3, .bloco2 p{color: #fff;}
+.aviao{
+	margin-top: 150px;
+	position: relative;
+}
+.aviao::before{
+	content: '';
+	background: url('../img/aviao.png') no-repeat;
+	width: 288px;
+	height: 167px;
+	position: absolute;
+	left: -20px;
+	top: -130px
+}
+.bloco3{
+	background: url('../img/bg3.jpg') no-repeat;
+	background-size: cover;
+	background-position: bottom right;
+}
+.bloco3 h3, .bloco3 p{color: #fff;}
+
+
+.painel2{
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(238,125,0,0.2) 100%);
+	border-radius: 20px;
+	width: 835px;
+	min-height: 440px;
+	padding-left: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 30px;
+	position: relative;
+	justify-content: center;
+}
+.painel2 button{
+	width: 255px;
+	height: 88px;
+	border-radius: 50px;
+	margin-bottom: 20px;
+}
+.painel2::before{
+	content: '';
+	background: url('../img/painel_balanca.png') no-repeat;
+	width: 399px;
+	height: 464px;
+	bottom: -50px;
+	left: 0;
+	position: absolute;
+}
+
+@media (max-width: 890px){
+	.painel2{
+		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,125,0,0.2) 100%);
+		width: 100%;
+		min-height: 940px;
+		padding-top: 60%;
+		padding-left: 0;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 50px;
+	}
+	.painel2::before{
+		bottom: unset;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: 20px;
+		width: 390px;
+		max-width: 100%;
+		background-size: contain;
+	}
+	.painel2 button{margin-bottom: 30px;}
+}
+@media (max-width: 520px){
+	.painel2{
+		min-height: 830px;
+		padding-top: 480px;
+	}
+	.destaque.fundo1{background: url('../img/destaque_mobile.jpg') no-repeat;}
+}
