@@ -1,0 +1,38 @@
+body{
+	background: rgb(255,117,0);
+	background: linear-gradient(129deg, rgba(255,117,0,0.3) 0%, rgba(255,255,255,1) 100%);
+}
+#booklet{
+	background: url('../img/elemento1.png'), url('../img/elemento2.png'), url('../img/elemento3.png'), url('../img/elemento4.png');
+	background-repeat: no-repeat;
+	background-position: right 10px top 100px, left 10px top 25%, right 10px bottom 25%, left 10px bottom 100px;
+	background-size: 15%;
+}
+
+.painel1 button{
+	width: 227px;
+	height: 317px;
+	border: 5px solid transparent;
+	margin-bottom: 20px;
+	border-radius: 12px;
+}
+.painel1 button:hover{
+	border-color: #ffcf00;
+}
+.bt-social{background: url('../img/bt1.png') no-repeat center;}
+.bt-ecoturismo{background: url('../img/bt2.png') no-repeat center;}
+.bt-cultural{background: url('../img/bt3.png') no-repeat center;}
+.bt-estudos{background: url('../img/bt4.png') no-repeat center;}
+.bt-esportes{background: url('../img/bt5.png') no-repeat center;}
+.bt-pesca{background: url('../img/bt6.png') no-repeat center;}
+.bt-nautico{background: url('../img/bt7.png') no-repeat center;}
+.bt-aventura{background: url('../img/bt8.png') no-repeat center;}
+.bt-sol{background: url('../img/bt9.png') no-repeat center;}
+.bt-negocios{background: url('../img/bt10.png') no-repeat center;}
+.bt-rural{background: url('../img/bt11.png') no-repeat center;}
+.bt-saude{background: url('../img/bt12.png') no-repeat center;}
+
+
+@media (max-width: 1260px){
+	#booklet{background: none;}
+}
