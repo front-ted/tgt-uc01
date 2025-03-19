@@ -734,6 +734,7 @@ tbody td:first-child{border-left: 0;}
 .referencias h2, .referencias h3, .referencias h4{
     font-family: italiana;
 }
+.referencias p{word-wrap: break-word;}
 
 /*MARCADORES - LISTA*/
 .marcador-padrao li{
