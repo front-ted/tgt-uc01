@@ -56,6 +56,11 @@
 	align-items: center;
     justify-content: center;
 }
+.painel1 .check.visitado::after{
+	top: unset;
+	bottom: 70px;
+	z-index: 2;
+}
 .painel1 button:hover span{
     color: #fff;
 	background: #fe7600;

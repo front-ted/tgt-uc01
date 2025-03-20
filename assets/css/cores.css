@@ -18,7 +18,8 @@
 	radial-gradient(farthest-corner at 100% 100%, var(--cor-secundaria) 0%, transparent 60%), 
 	linear-gradient(180deg, var(--cor-primaria) 0%, var(--cor-primaria) 100%);
 
-	--gradiente-referencias: radial-gradient(circle at 0 10%, var(--cor-primaria) 0, transparent 50%), radial-gradient(circle at 40% 150%, var(--cor-secundaria) 0, #fff 60%);
+	--gradiente-referencias: radial-gradient(circle at 0 2%, var(--cor-primaria) 0, transparent 3%), 
+	radial-gradient(circle at 50% 100%, var(--cor-secundaria) 0, #fff 3%);
 
 	--gradiente-fundo: var(--cor-terciaria);
 	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, var(--cor-terciaria) 0%, transparent 60%), 
@@ -62,7 +63,7 @@
 .audio-player input[type=range]::-webkit-slider-thumb,
 .audio-player input[type=range]::-webkit-slider-runnable-track,
 .audio-player input[type=range]:focus::-webkit-slider-runnable-track{
-	background: linear-gradient(270deg, var(--cor-secundaria) 0%, var(--cor-terciaria) 100%);
+	background: linear-gradient(270deg, var(--cor-primaria) 0%, var(--cor-terciaria) 100%);
 }
 .audio-player input[type=range]::-moz-range-track,
 .audio-player input[type=range]::-moz-range-thumb {

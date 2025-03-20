@@ -94,6 +94,7 @@ body{
 	color: #fff;
 	margin-bottom: 20px;
 	transition: all .4s;
+	position: relative;
 }
 .painel3 button:hover{transform: scale(1.1);}
 .bt-online{
@@ -112,7 +113,7 @@ body{
 	background: url('../img/painel2_bt4.png') no-repeat;
 	width: 380px;
 }
-.num1{
+/* .num1{
 	background: url('../img/1.png') no-repeat left top;
 	padding-left: 70px;
 	min-height: 70px;
@@ -161,8 +162,16 @@ body{
 	background: url('../img/10.png') no-repeat left top;
 	padding-left: 70px;
 	min-height: 70px;
-}
+} */
 .caixa-container{margin: 50px auto;}
+
+.bt-baixarpdf{
+	background: url('../img/bt_pdf.png') no-repeat;
+	width: 348px;
+	height: 348px;
+	transition: all .4s;
+}
+.bt-baixarpdf:hover{transform: scale(1.1);}
 
 @media (max-width: 1280px){
 	#booklet{

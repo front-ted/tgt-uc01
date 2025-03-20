@@ -25,6 +25,11 @@ body{
 	margin: 50px auto;
 	padding: 100px;
 }
+.painel1 .check.visitado::after{
+	top: unset;
+	bottom: 30px;
+	z-index: 2;
+}
 .painel1 button,
 .painel2 button,
 .painel3 button{
@@ -124,6 +129,12 @@ body{
 .bt-ferroviario button{background: url('../img/pg2_painel2_img03.png') no-repeat center;}
 .bt-maritimo button{background: url('../img/pg2_painel2_img04.png') no-repeat center;}
 
+.painel2 .check.visitado::after{
+	top: unset;
+    bottom: 30px;
+	z-index: 2;
+}
+
 .pagina3{
 	background: url('../img/pg3_img_lateral1.png') no-repeat right 10px top 100px / 15%;
 }
@@ -157,6 +168,13 @@ body{
 }
 .painel3 .check.visitado::after{display: none;}
 
+
+.marcador-numeral li:nth-child(10) {
+    background-image: url(../img/marcador_10.svg);
+}
+.marcador-numeral li:nth-child(11) {
+    background-image: url(../img/marcador_11.svg);
+}
 
 @media (max-width: 1280px){
 	.pagina1, .pagina3{background: none;}

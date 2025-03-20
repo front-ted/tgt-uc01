@@ -180,6 +180,13 @@ h2 span{font-size: 0.7em;}
 	}
 }
 .painel1 > div:hover::before{display: block;}
+
+.painel1 .check.visitado::after{
+	top: unset;
+	bottom: 40px;
+	z-index: 2;
+}
+
 .bloco6{
 	background-image: url('../img/bg_gradiente.png');
 	background-position: bottom right;

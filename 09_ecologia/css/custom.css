@@ -163,6 +163,7 @@ body{
 	position: relative;
 	z-index: 2;
 	margin-bottom: 30px;
+    position: relative;
 }
 .painel3 button:hover{
 	transform: unset;
@@ -185,6 +186,11 @@ body{
 	height: 86px;
 	align-items: center;
     justify-content: center;
+}
+.painel3 .check.visitado::after{
+    top: unset;
+    bottom: 60px;
+    z-index: 2;
 }
 .painel3 button:hover span{
     color: #fff;

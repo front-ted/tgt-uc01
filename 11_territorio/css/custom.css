@@ -32,9 +32,6 @@
     right: 0;
     margin: auto;
 }
-.bloco2 .bt-objeto::after {
-    top: 180px;
-}
 .bloco3{
 	background: radial-gradient(at left center, rgba(238, 126, 0, .5), transparent 80%),
 	url('../img/bg3.jpg') no-repeat left 85vw center / auto 100%;

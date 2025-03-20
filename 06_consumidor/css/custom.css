@@ -7,6 +7,7 @@ body{
 	background-position: top right;
 	background-size: 15%;
 	background-attachment: fixed;
+	padding-bottom: 100px;
 }
 .espera-video{border: 2px solid;}
 
