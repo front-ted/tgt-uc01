@@ -22,9 +22,27 @@ body{
     width: 624px;
     height: 624px;
     margin: 50px auto;
-    background: url('../img/painel_bg.png') no-repeat;
+    background: url('../img/painel_5r.png') no-repeat center;
     position: relative;
+    z-index: 2;
 }
+.div-efeito{position: relative;}
+.div-efeito::after{
+	content: '';
+	position: absolute;
+	background: url('../img/painel_bg.png') no-repeat;
+	width: 624px;
+    height: 623px;
+	background-size: contain;
+	top: -5px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+	-webkit-animation: rotate-center 30s linear infinite both;
+	        animation: rotate-center 30s linear infinite both;
+}
+
 .painel1 button{
     position: absolute;
     width: 175px;
@@ -260,6 +278,7 @@ body{
 .destaque3{background: url('../img/dest3.jpg') no-repeat center; padding-right: 30%;}
 
 @media (max-width: 780px){
+    .div-efeito::after{display: none;}
     .painel1{
         width: 400px;
         height: 670px;
