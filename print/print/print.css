@@ -51,7 +51,6 @@
   }
   img, .equacoes, figure, .print-proteger {
     page-break-inside: avoid !important;
-    max-width: 500px !important;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -325,9 +324,9 @@
   }
   .destaque.gradiente{background: transparent;}
 
-  ul li{list-style-type: disc !important;}
-  ol li{list-style-type: auto !important;}
-  ol[type="a"] li{list-style-type: lower-alpha !important;}
+  ul li, ul{list-style-type: disc !important;}
+  ol li, ol{list-style-type: auto !important;}
+  ol[type="a"] li, ol[type="a"]{list-style-type: lower-alpha !important;}
 
   .bt-tooltip{text-decoration: underline;}
 

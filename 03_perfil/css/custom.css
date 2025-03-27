@@ -113,6 +113,8 @@
 }
 .painel1 > div:hover::before{display: block;}
 
+.flip-card{width: 410px;}
+
 @media (max-width: 980px){
 	.img-down, .img-up{display: none;}
 	.linha-mobile{

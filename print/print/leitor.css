@@ -674,10 +674,10 @@ iframe, iframe.youtube-pl{
   display: none;
 }
 .destaque{
-  width: 80%;
-  border: 2px solid;
-  margin: 20px auto;
-  padding: 10px;
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 .destaque.gradiente{background: transparent;}
 /* código para tabela não desconfigurar na versão impressa */
