@@ -325,9 +325,11 @@
   .destaque.gradiente{background: transparent;}
 
   ul li, .marcador-padrao li, 
-  .marcador-seta li, .marcador-check li{list-style-type: disc !important;}
-  ol li, .marcador-numeral li, .marcador-letras li{list-style-type: auto !important;}
-  ol[type="a"] li{list-style-type: lower-alpha !important;}
+  .marcador-seta li, .marcador-check li{list-style: disc !important;}
+
+  ol li, .marcador-numeral li, .marcador-letras li{list-style: auto !important;}
+
+  ol[type="a"] li{list-style: lower-alpha !important;}
 
   .bt-tooltip{text-decoration: underline;}
 
