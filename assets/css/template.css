@@ -716,13 +716,15 @@ tbody td:first-child{border-left: 0;}
 .btn-tema_pagina:hover {
     transform: scale(1.1);
 }
-.bg-escuro .game-associar-colunas p{color: #000;}
+.bg-escuro .game-associar-colunas p,
+.bg-escuro .modal-body *{color: #000;}
+
 
 /*MODO ESCURO*/
 
 /*CITAÇÃO*/
 .citacao {padding-left: 20%;}
-.citacao *{font-size: .9em;}
+.citacao p{font-size: .9em;}
 
 /*REFERÊNCIAS*/
 .referencias #booklet{

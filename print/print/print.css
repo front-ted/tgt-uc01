@@ -336,4 +336,7 @@
   ol[type="a"] li{list-style-type: lower-alpha !important;}
 
   .bt-tooltip{text-decoration: underline;}
+
+  .citacao {padding-left: 20% !important;}
+  .citacao p{font-size: 11pt !important;}
 }

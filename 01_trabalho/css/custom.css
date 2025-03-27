@@ -3,7 +3,7 @@ body{
 	background-attachment: fixed;
 }
 .bloco1{
-	background: url('../img/bg_titulo.jpg') no-repeat center;
+	background: url('../img/bg_titulo.jpg') no-repeat center top;
 	min-height: 100vh;
 }
 .bloco1 h2{
@@ -39,7 +39,7 @@ h2 span{
 .div4{background-image: url('../img/parallax4.jpg');}
 .div5{background-image: url('../img/parallax5.jpg');}
 
-@media (max-width: 780px){
+@media (max-width: 990px){
 	.bloco1{
 		background-image: none;
 		min-height: unset;

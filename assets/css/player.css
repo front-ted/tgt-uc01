@@ -204,7 +204,7 @@
         right: unset;
         left: 20%;
     }
-    .bg-podcast:not(.audio) .audio-player{padding-bottom: 200px;}
+    .bg-podcast:not(.audio) .audio-player{padding-bottom: 15px;}
     .audio-player::before{
         top: unset;
         bottom: -10px;
