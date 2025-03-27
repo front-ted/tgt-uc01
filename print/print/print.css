@@ -165,10 +165,7 @@
     height: initial;
     display: block;
   }
-  .accordion-item{
-    page-break-inside: avoid;
-  }
-  .accordion-header button, .modal-title{font-size: 15pt !important;}
+  .accordion-header button, .modal-title{font-size: 13pt !important;}
 
   /*carousel*/
   .carousel{
@@ -233,8 +230,6 @@
     transition: none;
     width: auto;
     margin: 0;
-    margin-top: 5rem;
-    margin-bottom: 0rem;
   }
   .modal-dialog .modal-header .btn-close{
     display: none;
@@ -244,7 +239,6 @@
   }
   .modal-dialog.modal-fullscreen{
     padding: 0;
-    margin-top: 2rem;  
     transform: none;
   }
   .modal-dialog.modal-fullscreen .container{
@@ -339,4 +333,5 @@
 
   .citacao {padding-left: 20% !important;}
   .citacao p{font-size: 11pt !important;}
+  .mb-5, .my-5, .mt-5{margin: 0 !important;}
 }

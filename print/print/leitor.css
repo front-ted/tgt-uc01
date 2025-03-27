@@ -722,3 +722,4 @@ ol[type="a"] li{list-style-type: lower-alpha !important;}
 .bt-tooltip{text-decoration: underline;}
 .citacao {padding-left: 20%;}
 .citacao p{font-size: .9em;}
+.mb-5, .my-5, .mt-5{margin: 0;}
