@@ -333,4 +333,5 @@
   .citacao {padding-left: 20% !important;}
   .citacao p{font-size: 11pt !important;}
   .mb-5, .my-5, .mt-5{margin: 0 !important;}
+  .row{page-break-inside: unset !important;}
 }
