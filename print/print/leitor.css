@@ -164,7 +164,6 @@
 }
 .pagina img	{
   display: inline-block;
-  max-width: 60% !important;
 }
 .pagina legend{
   display: block;
