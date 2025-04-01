@@ -268,15 +268,35 @@ body{
 .destaque-imagem{
 	padding: 50px;
 	margin: 50px auto;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    position: relative;
 }
 .destaque-imagem p{
 	color: #fff;
 	margin: 0;
-	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 }
-.destaque1{background: url('../img/dest1.jpg') no-repeat center; padding-right: 30%;}
-.destaque2{background: url('../img/dest2.jpg') no-repeat center; padding-left: 30%;}
-.destaque3{background: url('../img/dest3.jpg') no-repeat center; padding-right: 30%;}
+.destaque1{
+    background: url('../img/dest_bg.png') no-repeat center; 
+    padding-right: 30%;
+    padding-left: 150px;
+}
+.destaque1::after{
+    content: '';
+    background: url('../img/dest1.png') no-repeat;
+    width: 485px;
+    height: 474px;
+    position: absolute;
+}
+.destaque2{
+    background: url('../img/dest_bg2.png') no-repeat center; 
+    padding-left: 30%;
+    padding-right: 150px;
+}
+.destaque3{
+    background: url('../img/dest_bg.png') no-repeat center; 
+    padding-right: 30%;
+    padding-left: 150px;
+}
 
 @media (max-width: 780px){
     .div-efeito::after{display: none;}

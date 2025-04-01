@@ -714,10 +714,30 @@ table.text-left.align-middle td {
 }
 .destaque.gradiente{background: transparent;}
 
-ul li, .marcador-padrao li, 
-.marcador-seta li, .marcador-check li{list-style-type: disc !important;}
-ol li, .marcador-numeral li, .marcador-letras li{list-style-type: auto !important;}
-ol[type="a"] li{list-style-type: lower-alpha !important;}
+.pagina ol {
+  display: block;
+  list-style-type: decimal !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+.pagina ul {
+  display: block;
+  list-style-type: circle !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+.pagina li {
+  display: list-item !important;
+  list-style: circle !important;
+ }
 
 .bt-tooltip{text-decoration: underline;}
 .citacao {padding-left: 20%;}

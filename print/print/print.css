@@ -348,6 +348,11 @@
     padding-left: 40px;
   }
 
+  .pagina li {
+    display: list-item !important;
+    list-style: circle !important;
+  }
+
   .bt-tooltip{text-decoration: underline;}
 
   .citacao {padding-left: 20% !important;}
