@@ -37,7 +37,7 @@
 	url('../img/bg3.jpg') no-repeat left 85vw center / auto 100%;
 }
 .bloco4{
-	background: url('../img/bg4.jpg') no-repeat right 85vw center / auto 100% #f9cb99;
+	background: url('../img/bg4.jpg') no-repeat right 80vw center / auto 100% #f9cb99;
 }
 .painel1{
 	background-image: url('../img/cordapainelclicavel.png'), url('../img/cordapainelclicavel.png');
