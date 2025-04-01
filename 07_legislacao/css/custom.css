@@ -41,8 +41,7 @@ h2 span{
 .painel1 button:hover::before{display: block;}
 .painel1 button span{
 	position: absolute;
-	top: 0;
-	bottom: 0;
+	bottom: 20px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -53,6 +52,10 @@ h2 span{
 	top: 85px;
     right: 0px;
 }
+
+.bt-civil{background: url('../img/bt_01.png') no-repeat center;}
+.bt-penal{background: url('../img/bt_02.png') no-repeat center;}
+.bt-infracoes{background: url('../img/bt_03.png') no-repeat center;}
 
 @-webkit-keyframes rotate-center {
 	0% {

@@ -106,7 +106,7 @@
   p{
     font-size: 12pt;
     color: black
-  };
+  }
   .icone::before{
     display: none !important;   
     background-color: transparent !important;
@@ -328,13 +328,25 @@
   }
   .destaque.gradiente{background: transparent;}
 
-  ul li, .marcador-padrao li, 
-  .marcador-seta li, .marcador-check li{list-style: disc !important;}
-  ul, ol{padding-left: 15px !important;}
-
-  ol li, .marcador-numeral li, .marcador-letras li{list-style: auto !important;}
-
-  ol[type="a"] li{list-style: lower-alpha !important;}
+  .pagina ol {
+    display: block;
+    list-style-type: decimal !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+  
+  .pagina ul {
+    display: block;
+    list-style-type: circle !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
 
   .bt-tooltip{text-decoration: underline;}
 
