@@ -293,19 +293,15 @@
     page-break-inside: avoid;
   }
 
-  .splide__pagination{display: none !important;}
-  .splide__list li{list-style: none !important;}
-
   /* código para tabela não desconfigurar na versão impressa */
-  table.text-left.align-middle {
-    width: 80% !important;
+  table {
+    width: 100% !important;
     border-collapse: collapse !important;
     margin-bottom: 10px !important;
     margin: auto !important;
   }
 
-  table.text-left.align-middle th {
-    background-color: #1A4480 !important;
+  table th {
     border: 1px solid black !important;
     padding: 8px !important;
     text-align: left !important;
@@ -313,7 +309,7 @@
     display: table-cell !important;
   }
 
-  table.text-left.align-middle td {
+  table td {
     border: 1px solid black !important;
     padding: 8px !important;
     text-align: left !important;
