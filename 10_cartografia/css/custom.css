@@ -32,14 +32,16 @@ body{
 }
 .bloco2{
 	padding: 100px 0;
-	
+	padding-bottom: 30px;
 }
 .postit div{
 	padding: 40px 30px;
 }
 .postit p, .postit b{
 	font-family: caveat;
-	margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 23px;
+    line-height: 31px;
 }
 .postit b{
 	color: #5c000f;
@@ -124,6 +126,8 @@ body{
     right: 70px;
 }
 
+.accordion .accordion-header i{margin: 5px;}
+
 @-webkit-keyframes rotate-center {
 	0% {
 	  -webkit-transform: rotate(0);
@@ -199,7 +203,7 @@ body{
 }
 
 .flip-card-inner{background: transparent;}
-@media (max-width: 1380px){
+@media (max-width: 1480px){
 	.container > h2::before, .container > h3::before{
 		background-size: contain;
 		width: 140px;
@@ -263,4 +267,10 @@ body{
 		top: -12px;
 		right: 0;
 	}
+}
+@media (max-width: 580px){
+	.destaque-imagem {
+        width: 100%;
+    }
+	.flip-card{height: 328px;}
 }

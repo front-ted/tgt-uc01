@@ -163,8 +163,16 @@
   .accordion .accordion-collapse{
     height: initial;
     display: block;
+    page-break-inside:auto;
+    page-break-after:auto;
+    page-break-before:auto;
   }
   .accordion-header button, .modal-title{font-size: 13pt !important;}
+  .accordion h2{
+    page-break-inside:auto;
+    page-break-after:auto;
+    page-break-before:auto;
+  }
 
   /*carousel*/
   .carousel{
@@ -326,6 +334,7 @@
 
   ul li, .marcador-padrao li, 
   .marcador-seta li, .marcador-check li{list-style: disc !important;}
+  ul, ol{padding-left: 15px !important;}
 
   ol li, .marcador-numeral li, .marcador-letras li{list-style: auto !important;}
 
@@ -337,4 +346,8 @@
   .citacao p{font-size: 11pt !important;}
   .mb-5, .my-5, .mt-5{margin: 0 !important;}
   .row{page-break-inside: unset !important;}
+  .w-75, .w-90, .w-80{width: 100% !important;}
+  .text-end{text-align: left !important;}
+  .justify-content-evenly{justify-content: unset !important;}
+  .postit div{width: 100% !important;}
 }

@@ -205,7 +205,7 @@ button.bt-turismo{
 	.painel1{background: none;}
 }
 
-@media (max-width: 1380px){
+@media (max-width: 1510px){
 	.bloco1{
 		background: radial-gradient(farthest-corner at 0 0, rgba(243, 163, 76, 1) 0%, transparent 20%);
 	}

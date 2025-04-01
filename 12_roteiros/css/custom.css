@@ -76,6 +76,8 @@ body{
 	padding-bottom: 200px;
 }
 
+.accordion-header i{margin: 5px;}
+
 @media (max-width: 1280px){
 	.bloco1, .bloco2, .bloco3, .bloco4{background-image: none;}
 }

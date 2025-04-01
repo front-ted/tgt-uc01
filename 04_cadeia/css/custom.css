@@ -30,6 +30,10 @@ body{
 	bottom: 30px;
 	z-index: 2;
 }
+
+.painel1 button span i,
+.accordion .accordion-header i{margin: 5px;}
+
 .painel1 button,
 .painel2 button,
 .painel3 button{
@@ -203,4 +207,5 @@ body{
 		margin: -50px;
 		margin-top: -80px;
 	}
+	.painel3 > div:hover::before{display: none;}
 }

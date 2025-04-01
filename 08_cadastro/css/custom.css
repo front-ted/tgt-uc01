@@ -229,7 +229,10 @@ h2 span{font-size: 0.7em;}
 		margin-bottom: 50px;
 		width: 100%;
 	}
-	.bloco1{background-size: auto, 20%, contain;}
-	.bloco3{background-size: 20%, contain, 20%, contain;}
-	.bloco5{background-size: 20%, contain, 20%, contain;}
+	.bloco1{background-size: auto, 15%, contain;}
+	.bloco3{background-size: 15%, contain, 20%, contain;}
+	.bloco5{background-size: 15%, contain, 20%, contain;}
+}
+@media (max-width: 580px){
+	.bloco-laranja, .bloco2, .bloco4{padding: 50px 0;}
 }
