@@ -270,6 +270,7 @@ body{
 	margin: 50px auto;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
     position: relative;
+    width: 80%;
 }
 .destaque-imagem p{
 	color: #fff;
@@ -277,25 +278,45 @@ body{
 }
 .destaque1{
     background: url('../img/dest_bg.png') no-repeat center; 
-    padding-right: 30%;
     padding-left: 150px;
 }
 .destaque1::after{
     content: '';
     background: url('../img/dest1.png') no-repeat;
-    width: 485px;
-    height: 474px;
+    width: 250px;
+    height: 245px;
     position: absolute;
+    background-size: contain;
+    left: -120px;
+    top: -20px;
 }
 .destaque2{
     background: url('../img/dest_bg2.png') no-repeat center; 
-    padding-left: 30%;
     padding-right: 150px;
+}
+.destaque2::after{
+    content: '';
+    background: url('../img/dest2.png') no-repeat;
+    width: 250px;
+    height: 245px;
+    position: absolute;
+    background-size: contain;
+    right: -120px;
+    top: -20px;
 }
 .destaque3{
     background: url('../img/dest_bg.png') no-repeat center; 
-    padding-right: 30%;
     padding-left: 150px;
+}
+.destaque3::after{
+    content: '';
+    background: url('../img/dest3.png') no-repeat;
+    width: 250px;
+    height: 245px;
+    position: absolute;
+    background-size: contain;
+    left: -120px;
+    top: -20px;
 }
 
 @media (max-width: 780px){
@@ -317,6 +338,42 @@ body{
         bottom: unset;
         left: unset;
         right: unset;
+    }
+
+    .destaque-imagem{
+        width: 100%;
+    }
+    .destaque1{
+        margin-top: 230px;
+        padding-left: 50px
+    }
+    .destaque1::after{
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -200px;
+    }
+    .destaque2{
+        background: url('../img/dest_bg.png') no-repeat center; 
+        margin-top: 230px;
+        padding-right: 50px;
+        text-align: left !important;
+    }
+    .destaque2::after{
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -200px;
+    }
+    .destaque3{
+        padding-left: 50px;
+        margin-top: 230px;
+    }
+    .destaque3::after{
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -200px;
     }
 }
 @media (max-width: 450px){
