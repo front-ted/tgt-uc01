@@ -1112,7 +1112,7 @@
                                 </div>
                                 <p>Você sabe qual a diferença entre conexão e escala?</p>
                                 <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
-                                <div class="d-none d-sm-block no-print">
+                                <div class="d-none d-sm-block no-print" aria-hidden="true">
                                     <ul class="nav nav-tabs" id="myTab" role="tablist" aria-hidden="true">
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
@@ -1138,7 +1138,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-block d-sm-none">
+                                <div class="d-block d-sm-none no-print" aria-hidden="true">
                                     <div class="accordion" id="accordion2">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="heading1">
@@ -1173,6 +1173,14 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="sr-only print">
+                                    <h4>Conexão</h4>
+                                    <p>O passageiro troca de aeronave em algum aeroporto entre a origem
+                                        e o destino.</p>
+                                    <h4>Escala</h4>
+                                    <p>O passageiro não troca de aeronave, mas existe uma parada entre a
+                                        cidade de origem e a cidade de destino. </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="botao hvr-grow-shadow"
@@ -1741,7 +1749,8 @@
                     <ul class="marcador-padrao mb-5">
                         <li><b>A demanda real</b> é representada pelo total de pessoas que efetivamente realizam viagens
                             turísticas. </li>
-                        <li><b>A demanda potencial</b> é composta pelo conjunto de pessoas que são capazes de consumir produtos
+                        <li><b>A demanda potencial</b> é composta pelo conjunto de pessoas que são capazes de consumir
+                            produtos
                             turísticos, pois têm condições financeiras, físicas e psicológicas, mas não viajam por
                             motivos diversos, como falta de tempo e desconhecimento sobre determinados produtos
                             turísticos.</li>
