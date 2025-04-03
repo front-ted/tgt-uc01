@@ -1,0 +1,31 @@
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  width: 300px !important;
+  height: 160px;
+  .tagImg {
+    height: 160px;
+    width: 300px;
+    object-fit: contain;
+  }
+  .txt {
+    opacity: 0;
+    font-size: 0.1px;
+  }
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.gu-transit {
+  opacity: 0.2;
+}

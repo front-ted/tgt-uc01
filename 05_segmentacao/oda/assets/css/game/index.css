@@ -1,0 +1,449 @@
+.game {
+  width: 1920px;
+  height: 1080px;
+  position: fixed;
+  left: calc(50% - 1920px / 2);
+  margin: auto;
+  top: calc(50% - 1080px / 2);
+  overflow: hidden;
+
+  .intro {
+    width: 100%;
+    height: 100%;
+    background: url("../../imgs/BG_capa.jpg") center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .stewardess {
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      animation: idle linear infinite 1s alternate;
+      z-index: 1;
+    }
+
+    .panel {
+      position: absolute;
+      left: calc(50% - (1250px / 2) / 2);
+      top: 25px;
+      width: 981px;
+      height: 470px;
+      background: url("../../imgs/capa_painel.png") center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      .content {
+        padding: 50px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .txt-default {
+          font-family: "Roboto";
+          font-weight: 400;
+          text-align: center;
+          font-size: 32px;
+          color: #5c000f;
+        }
+
+        .btn-init {
+          background: url("../../imgs/bt_iniciar.png") center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          transition: 0.55s background-image;
+          width: 295px;
+          height: 120px;
+          border: none;
+          cursor: pointer;
+          font-size: 1px;
+          color: transparent;
+
+          &:hover {
+            background-image: url("../../imgs/bt_iniciar_hv.png");
+          }
+        }
+      }
+    }
+  }
+
+  .airport {
+    width: 100%;
+    height: 100%;
+    background: url("../../imgs/BG_interno.jpg") center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .head {
+      width: 100%;
+      height: 30%;
+      padding: 50px 4%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 12%;
+
+      .stewardess {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 0 0 0 25px;
+        .txt {
+          font-weight: bold;
+          font-size: 36px;
+          color: #fff;
+          position: absolute;
+          right: 30px;
+        }
+      }
+      .btns-endGame {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        align-items: center;
+        .btn-next,
+        .btn-prev {
+          width: 100px;
+          height: 100px;
+          padding: 25px;
+          border-radius: 50%;
+          background-color: #5c000f;
+          background-size: scale-down;
+          background-position: center;
+          background-repeat: no-repeat;
+          &.swiper-button-disabled {
+            opacity: 1;
+            cursor: not-allowed;
+            filter: grayscale(1);
+          }
+        }
+        .btn-next {
+          background-image: url("../../imgs/arrows/bt_seta_dir.png");
+          &:hover {
+            background-image: url("../../imgs/arrows/bt_seta_dir_hv.png");
+          }
+        }
+        .btn-prev {
+          background-image: url("../../imgs/arrows/bt_seta_esq.png");
+          &:hover {
+            background-image: url("../../imgs/arrows/bt_seta_esq_hv.png");
+          }
+        }
+      }
+      .btn-resetGame {
+        width: 565px;
+        height: 138px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        cursor: pointer;
+        font-size: 1px;
+        color: transparent;
+        background-color: transparent;
+        background-image: url("../../imgs/bt_novam.png");
+        &:hover {
+          background-image: url("../../imgs/bt_novam_hv.png");
+        }
+      }
+      .swiperBeltTags {
+        height: 275px;
+        width: 100%;
+        background: url("../../imgs/painel_tags.png") center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: relative;
+
+        .swiper-wrapper {
+          box-sizing: border-box;
+
+          .swiper-slide {
+            display: flex;
+            align-items: center;
+            width: 300px !important;
+            .tagImg {
+              height: 160px;
+              width: 300px;
+              object-fit: contain;
+            }
+            .txt {
+              opacity: 0;
+              font-size: 0.1px;
+            }
+          }
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+          height: 96%;
+          top: 5px;
+          bottom: 0px;
+          margin: 0;
+          width: 67px;
+          background: #5c000f;
+          border: 2px solid #874a54;
+        }
+        .swiper-button-next {
+          border-radius: 0 48px 48px 0;
+          right: 0px;
+          &::after {
+            content: url("../../imgs/arrows/bt_seta_dir.png");
+          }
+
+          &.swiper-button-disabled {
+            opacity: 1;
+            cursor: not-allowed;
+            &::after {
+              content: url("../../imgs/arrows/bt_seta_dir_inativo.png");
+            }
+          }
+          &:hover {
+            &::after {
+              content: url("../../imgs/arrows/bt_seta_dir_hv.png");
+            }
+          }
+        }
+        .swiper-button-prev {
+          border-radius: 48px 0 0 48px;
+          left: 0px;
+
+          &::after {
+            content: url("../../imgs/arrows/bt_seta_esq.png");
+          }
+          &.swiper-button-disabled {
+            opacity: 1;
+            cursor: not-allowed;
+            &::after {
+              content: url("../../imgs/arrows/bt_seta_esq_inativo.png");
+            }
+          }
+
+          &:hover {
+            &::after {
+              content: url("../../imgs/arrows/bt_seta_esq_hv.png");
+            }
+          }
+        }
+      }
+    }
+
+    .swiperBeltSuitcase {
+      height: 100%;
+      width: 100%;
+      margin: 0 0 68px 0;
+
+      .swiper-wrapper {
+        align-items: flex-end;
+        .swiper-slide {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: self-end;
+          width: 668px;
+          height: 516px;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          padding: 0 5% 3% 5%;
+          .containerTag {
+            position: absolute;
+            left: 50%;
+            width: 229px;
+            height: 138px;
+            overflow: hidden;
+            bottom: calc(80%) !important;
+            transform: translateX(25%);
+            .tagImg {
+              object-fit: cover;
+            }
+            .txt {
+              opacity: 0;
+              font-size: 0.1px;
+            }
+            &.suitcase01 {
+              top: -15px;
+              transform: translateX(10px);
+            }
+            &.suitcase02 {
+              top: -25px;
+              transform: translateX(10px);
+            }
+            &.suitcase03 {
+              top: -50px;
+            }
+            &.suitcase04 {
+              top: -40px;
+              transform: translateX(25px);
+            }
+            &.suitcase05 {
+              top: 10px;
+            }
+            &.suitcase06 {
+              top: 10px;
+            }
+            &.rotateTag {
+              transform: rotate(-30deg) scale(1.5);
+              overflow: unset;
+              top: -10%;
+              z-index: -1;
+              bottom: unset;
+              left: 50%;
+              &.suitcase01 {
+                top: -40px;
+                transform: rotate(-30deg) scale(1.5) translate(25px, 15px);
+              }
+              &.suitcase02 {
+                top: -55px;
+                transform: rotate(-30deg) scale(1.5) translate(25px, 15px);
+              }
+              &.suitcase03 {
+                top: -100px;
+                transform: rotate(-30deg) scale(1.5) translate(30px, 20px);
+                &[data-id="D"] {
+                  transform: rotate(-45deg) scale(1.5) translate(30px, 20px);
+                  top: -50px;
+                }
+              }
+              &.suitcase04 {
+                top: -70px;
+                transform: rotate(-30deg) scale(1.5) translate(10px, 10px);
+              }
+              &.suitcase05 {
+                top: -10px;
+                transform: rotate(-30deg) scale(1.5) translate(30px, 20px);
+              }
+              &.suitcase06 {
+                top: 0;
+                transform: rotate(-45deg) scale(1.5) translate(25px, 15px);
+              }
+              .tagImg {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+          .containerTxt {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100%;
+
+            .txt {
+              text-align: center;
+              color: #5c000f;
+              font-size: 30px;
+              border: 4px solid #5c000f;
+              padding: 15px;
+              background: #ffffffcc;
+              border-radius: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #feedback {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+    z-index: 10;
+    background-color: #333333cc;
+    .modal {
+      background-image: url("../../imgs/painel_feed.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 572px;
+      height: 693px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+      gap: 20px;
+      .btn-continue {
+        background-image: url("../../imgs/bt_continuar.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 0.55s background-image;
+        background-color: transparent;
+        width: 295px;
+        height: 120px;
+        border: none;
+        cursor: pointer;
+        font-size: 1px;
+        color: transparent;
+        &:hover {
+          background-image: url("../../imgs/bt_continuar_hv.png");
+        }
+      }
+      .txt {
+        color: #5c000f;
+        font-weight: 700;
+        text-align: center;
+        &.positive,
+        &.endGame {
+          font-size: 50px;
+        }
+        &.negative {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .fadeIn,
+  .fadeOut {
+    animation-timing-function: linear;
+  }
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  .fadeOut {
+    animation-name: fadeOut;
+  }
+}
+
+@keyframes idle {
+  0% {
+    transform: scale(0.99);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

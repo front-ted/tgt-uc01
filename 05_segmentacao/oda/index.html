@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segmentos Turísticos</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <div class="game">
+      <div class="btns-accessibility">
+        <button class="btn-fullscreen">Tela Cheia</button>
+      </div>
+      <div class="intro">
+        <img
+          src="./assets/imgs/capa_moca.png"
+          alt="Aeromoça"
+          class="stewardess"
+        />
+        <div class="panel">
+          <div class="content">
+            <span class="txt-default">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            </span>
+            <button class="btn-init">Iniciar</button>
+          </div>
+        </div>
+      </div>
+      <div class="airport d-none">
+        <div class="head">
+          <div class="stewardess">
+            <img
+              src="./assets/imgs/painel_instrucao.png"
+              alt="Painel de Instruções"
+            />
+            <span class="txt"
+              >Identifique <br />as malas
+              <button class="btn-info">i</button></span
+            >
+          </div>
+          <div class="btns-endGame d-none">
+            <div class="btn-prev"></div>
+            <div class="btn-next"></div>
+          </div>
+          <button class="btn-resetGame d-none">Jogar novamente</button>
+          <div class="swiperBeltTags">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev swiper-button-disabled"></div>
+          </div>
+        </div>
+        <div class="swiperBeltSuitcase">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+        </div>
+      </div>
+      <div id="feedback" class="d-none">
+        <div class="modal">
+          <span class="txt">
+            Quase lá! <br />Revise novamente os conceitos do turismo para
+            relacioná-lo com suas características.
+          </span>
+          <button class="btn-continue">Iniciar</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
+  </body>
+</html>
