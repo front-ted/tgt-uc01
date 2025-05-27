@@ -1,20 +1,24 @@
-body{
+body {
 	background: url('../img/bg.jpg') no-repeat center;
 	background-attachment: fixed;
 }
-.bloco1{
+
+.bloco1 {
 	background: url('../img/bg_titulo.jpg') no-repeat center top;
 	min-height: 100vh;
 }
-.bloco1 h2{
+
+.bloco1 h2 {
 	color: #fff;
-	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
-h2 span{
+
+h2 span {
 	font-size: 0.7em;
-    display: block;
+	display: block;
 }
-.divisoria{
+
+.divisoria {
 	width: 100%;
 	height: 300px;
 	background-size: cover;
@@ -22,37 +26,60 @@ h2 span{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
-.div1{background-image: url('../img/parallax1.jpg');}
-.div2{background-image: url('../img/parallax2.jpg');}
-.espera-video{border: 2px solid;}
-.div3{background-image: url('../img/parallax3.jpg');}
-.destaque-imagem{
+
+.div1 {
+	background-image: url('../img/parallax1.jpg');
+}
+
+.div2 {
+	background-image: url('../img/parallax2.jpg');
+}
+
+.espera-video {
+	border: 2px solid;
+}
+
+.div3 {
+	background-image: url('../img/parallax3.jpg');
+}
+
+.destaque-imagem {
 	background: url('../img/img6.jpg') no-repeat center;
 	padding: 50px;
 	margin: 50px auto;
+	background-size: cover;
 }
-.destaque-imagem p{
+
+.destaque-imagem p {
 	color: #fff;
 	margin: 0;
-	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
-.div4{background-image: url('../img/parallax4.jpg');}
-.div5{background-image: url('../img/parallax5.jpg');}
 
-@media (max-width: 990px){
-	.bloco1{
+.div4 {
+	background-image: url('../img/parallax4.jpg');
+}
+
+.div5 {
+	background-image: url('../img/parallax5.jpg');
+}
+
+@media (max-width: 990px) {
+	.bloco1 {
 		background-image: none;
 		min-height: unset;
 		padding: 0;
 	}
-	.bloco1 h2{
+
+	.bloco1 h2 {
 		color: #000;
 		text-shadow: unset;
 	}
 }
 
-@media (max-width: 480px){
-	.destaque-imagem{
+@media (max-width: 480px) {
+	.destaque-imagem {
 		background: url('../img/img6_mobile.jpg') no-repeat center;
+		background-size: cover;
 	}
 }
