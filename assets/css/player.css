@@ -1,4 +1,4 @@
-.bg-podcast{
+.bg-podcast {
     background: #fff;
     border-radius: 25px;
     border-width: 4px;
@@ -9,8 +9,9 @@
     position: relative;
     padding: 10px 20px;
 }
-.bg-podcast::before{
-    content:'';
+
+.bg-podcast::before {
+    content: '';
     background: url('../images/asset_circulo.svg') no-repeat;
     background-size: contain;
     height: 150px;
@@ -20,18 +21,24 @@
     right: -50px;
     z-index: -1;
 }
-.bg-podcast > div{
+
+.bg-podcast>div {
     position: relative;
     z-index: 2;
 }
-.bg-podcast p{margin: 0;}
-.audio-player{
+
+.bg-podcast p {
+    margin: 0;
+}
+
+.audio-player {
     color: #000;
     padding: 8px 20px;
     max-width: 250px;
 }
-.audio-player::before{
-    content:'';
+
+.audio-player::before {
+    content: '';
     background: url('../images/podcast_esq.svg') no-repeat;
     height: 179px;
     width: 185px;
@@ -39,8 +46,9 @@
     left: -32px;
     bottom: -11px;
 }
-.audio-player::after{
-    content:'';
+
+.audio-player::after {
+    content: '';
     background: url('../images/podcast_dir.svg') no-repeat;
     height: 188px;
     width: 193px;
@@ -49,13 +57,15 @@
     bottom: -11px;
     z-index: 2;
 }
-.audio-player .timestamp{
+
+.audio-player .timestamp {
     display: inline-block;
     vertical-align: text-top;
     font-weight: bold;
     text-align: center;
 }
-.audio-player .btn-player{
+
+.audio-player .btn-player {
     width: 40px;
     height: 40px;
     border: 0;
@@ -67,38 +77,50 @@
     margin-bottom: 0;
     transition: all .4s;
 }
-.audio-player .btn-player:hover{
+
+.audio-player .btn-player:hover {
     transform: translateY(-3px);
 }
 
-.audio-player .btn-play{
+.audio-player .btn-play {
     background-image: url(../../assets/images/play.svg);
 }
-.audio-player .btn-pause{
+
+.audio-player .btn-pause {
     background-image: url(../../assets/images/pause.svg);
 }
-.audio-player .btn-transcricao{
+
+.audio-player .btn-transcricao {
     background-image: url(../../assets/images/transcricao.svg);
 }
-.audio-player .btn-player:active, .audio-player .btn-player:focus{
+
+.audio-player .btn-player:active,
+.audio-player .btn-player:focus {
     transform: translateY(-3px);
     box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
     border-radius: 20px;
 }
-.barra{margin-bottom: 10px;}
-.botoes{
+
+.barra {
+    margin-bottom: 10px;
+}
+
+.botoes {
     display: flex;
     justify-content: space-between;
 }
+
 /*estilos da range do player*/
-.audio-player  input[type=range] {
+.audio-player input[type=range] {
     -webkit-appearance: none;
     margin: 10px 0;
     width: 100%;
 }
-.audio-player  input[type=range]:focus {
+
+.audio-player input[type=range]:focus {
     outline: none;
 }
+
 .audio-player input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 10px;
@@ -106,6 +128,7 @@
     animate: 0.2s;
     border-radius: 10px;
 }
+
 .audio-player input[type=range]::-webkit-slider-thumb {
     border: 4px solid #fff;
     height: 35px;
@@ -115,6 +138,7 @@
     -webkit-appearance: none;
     margin-top: -12px;
 }
+
 .audio-player input[type=range]::-moz-range-track {
     width: 100%;
     height: 10px;
@@ -122,6 +146,7 @@
     animate: 0.2s;
     border-radius: 10px;
 }
+
 .audio-player input[type=range]::-moz-range-thumb {
     border: 4px solid #fff;
     height: 35px;
@@ -130,6 +155,7 @@
     cursor: pointer;
     margin-top: -12px;
 }
+
 .audio-player input[type=range]::-ms-track {
     width: 100%;
     height: 10px;
@@ -139,18 +165,21 @@
     border-color: transparent;
     color: transparent;
 }
+
 .audio-player input[type=range]::-ms-fill-lower {
     background: #004E52;
     border: 0px solid #000000;
     border-radius: 0px;
     box-shadow: 0px 0px 0px #000000;
 }
+
 .audio-player input[type=range]::-ms-fill-upper {
     background: #004E52;
     border: 0px solid #000000;
     border-radius: 0px;
     box-shadow: 0px 0px 0px #000000;
 }
+
 .audio-player input[type=range]::-ms-thumb {
     box-shadow: 0px 0px 1px #000000;
     border: 0px solid #000000;
@@ -160,43 +189,56 @@
     background: #FFFFFF;
     cursor: pointer;
 }
+
 .audio-player input[type=range]:focus::-ms-fill-lower {
     background: #004E52;
 }
+
 .audio-player input[type=range]:focus::-ms-fill-upper {
     background: #004E52;
 }
 
 /*Transcrição de áudios dentro das modais*/
-.modal .bg-podcast > div::after{display: none;}
-.modal .accordion-transcricao{
+.modal .bg-podcast>div::after {
+    display: none;
+}
+
+.modal .accordion-transcricao {
     width: 90%;
     margin: auto;
     margin-top: -53px;
     padding-left: 30px;
 }
+
 /*Transcrição de áudios dentro das modais*/
 
 /*áudio*/
-.bg-podcast.audio::after, .bg-podcast.audio > div::after,
-.audio .audio-player::before, .audio .audio-player::after {
+.bg-podcast.audio::after,
+.bg-podcast.audio>div::after,
+.audio .audio-player::before,
+.audio .audio-player::after {
     display: none;
 }
-.bg-podcast.audio{
+
+.bg-podcast.audio {
     max-width: 300px;
     min-height: 155px;
 }
-.audio .audio-player{
+
+.audio .audio-player {
     margin: 0;
 }
 
-@media screen and (max-width: 1200px){
-    .modal .accordion-transcricao{padding-left: 0;}
+@media screen and (max-width: 1200px) {
+    .modal .accordion-transcricao {
+        padding-left: 0;
+    }
 }
-@media screen and (max-width: 840px){
+
+@media screen and (max-width: 840px) {
     /* .bg-podcast > div::after{display: none;} */
 
-    .bg-podcast::after{
+    .bg-podcast::after {
         height: 100px;
         width: 100px;
         top: unset;
@@ -204,16 +246,28 @@
         right: unset;
         left: 20%;
     }
-    .bg-podcast:not(.audio) .audio-player{padding-bottom: 15px;}
-    .audio-player::before{
+
+    .bg-podcast:not(.audio) .audio-player {
+        padding-bottom: 15px;
+    }
+
+    .audio-player::before {
         top: unset;
         bottom: -10px;
     }
-    .audio-player::after{
+
+    .audio-player::after {
         top: unset;
         bottom: -10px;
     }
 }
-@media screen and (max-width: 430px){
-    /* .audio-player::before{display: none;} */
+
+@media screen and (max-width: 600px) {
+    .audio-player::before {
+        display: none;
+    }
+
+    .audio-player::after {
+        display: none;
+    }
 }
