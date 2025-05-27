@@ -1,7 +1,7 @@
-body{
+body {
 	background: #ff7500;
 	background: radial-gradient(farthest-corner at 0 0, rgba(255, 117, 0, 0.3) 0%, transparent 50%),
-	linear-gradient(180deg, #fff 0%, #fff 100%);
+		linear-gradient(180deg, #fff 0%, #fff 100%);
 	background-image: url('../img/bg_elemento.png');
 	background-repeat: no-repeat;
 	background-position: top right;
@@ -9,150 +9,182 @@ body{
 	background-attachment: fixed;
 	padding-bottom: 100px;
 }
-.espera-video{border: 2px solid;}
 
-.painel1{
+.espera-video {
+	border: 2px solid;
+}
+
+.painel1 {
 	background: url('../img/painel.png') no-repeat;
 	width: 903px;
 	height: 601px;
 	margin: 50px auto;
 	position: relative;
 }
-.painel1 button{
+
+.painel1 button {
 	border: none;
 	position: absolute;
 	width: 175px;
-    height: 162px;
+	height: 162px;
 	background-color: transparent;
 	z-index: 2;
 }
-.painel1 button img{
+
+.painel1 button img {
 	display: none;
 	position: absolute;
 	z-index: 2;
 	left: 0;
 	bottom: 0;
 }
-.painel1 button:hover{
+
+.painel1 button:hover {
 	background: transparent;
+	scale: 0.8;
 }
-.painel1 button:hover img{
+
+.painel1 button:hover img {
 	display: block;
 }
-.painel1 .circulo{
+
+.painel1 .circulo {
 	-webkit-animation: rotate-center 15s linear infinite both;
-	        animation: rotate-center 15s linear infinite both;
+	animation: rotate-center 15s linear infinite both;
 	z-index: 1;
 	bottom: -8px;
 }
 
 @-webkit-keyframes rotate-center {
 	0% {
-	  -webkit-transform: rotate(0);
-			  transform: rotate(0);
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
 	}
+
 	100% {
-	  -webkit-transform: rotate(360deg);
-			  transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
 }
+
 @keyframes rotate-center {
 	0% {
 		-webkit-transform: rotate(0);
-				transform: rotate(0);
+		transform: rotate(0);
 	}
+
 	100% {
 		-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
 }
-.bt-desejo{
+
+.bt-desejo {
 	bottom: 80px;
-    left: 53px;
-}
-.bt-pesquisa{
-	left: 71px;
-    top: 121px;
-}
-.bt-avaliacao{
-    left: 309px;
-    top: 167px;
-}
-.bt-decisao{
-	top: 22px;
-    right: 241px;
-}
-.bt-consumo{
-	bottom: -41px;
-    right: 182px;
-}
-.bt-posconsumo{
-	right: 0;
-    top: 188px;
+	left: 53px;
 }
 
-.destaque-imagem{
+.bt-pesquisa {
+	left: 71px;
+	top: 121px;
+}
+
+.bt-avaliacao {
+	left: 309px;
+	top: 167px;
+}
+
+.bt-decisao {
+	top: 22px;
+	right: 241px;
+}
+
+.bt-consumo {
+	bottom: -41px;
+	right: 182px;
+}
+
+.bt-posconsumo {
+	right: 0;
+	top: 188px;
+}
+
+.destaque-imagem {
 	background: url('../img/destaque.png') no-repeat;
 	padding: 100px 50px;
 }
-.destaque-imagem *{
+
+.destaque-imagem * {
 	color: #fff;
 	margin: 0;
 	text-align: center;
 }
 
-@media screen and (max-width: 1280px){
-	body{background-image: none;}
+@media screen and (max-width: 1280px) {
+	body {
+		background-image: none;
+	}
 }
-@media screen and (max-width: 980px){
-	.painel1{
+
+@media screen and (max-width: 980px) {
+	.painel1 {
 		background: url('../img/painel_mobile.png') no-repeat;
 		width: 368px;
 		height: 650px;
 	}
-	.painel1 button{
+
+	.painel1 button {
 		width: 117px;
-    	height: 88px;
+		height: 88px;
 	}
-	.painel1 button:hover img{
+
+	.painel1 button:hover img {
 		display: none;
 	}
-	.bt-desejo{
+
+	.bt-desejo {
 		top: 89px;
-    	left: 40px;
+		left: 40px;
 	}
-	.bt-pesquisa{
+
+	.bt-pesquisa {
 		left: 209px;
-    	top: 97px;
+		top: 97px;
 	}
-	.bt-avaliacao{
+
+	.bt-avaliacao {
 		left: 158px;
 		top: 258px;
 	}
-	.bt-decisao{
+
+	.bt-decisao {
 		top: 419px;
 		right: 5px;
 	}
-	.bt-consumo{
+
+	.bt-consumo {
 		bottom: 35px;
 		right: 272px;
 	}
-	.bt-posconsumo{
+
+	.bt-posconsumo {
 		right: 89px;
 		top: unset;
 		bottom: -9px;
 	}
-	.painel1 .check.visitado::after{
+
+	.painel1 .check.visitado::after {
 		top: 0px;
-    	right: 10px;
+		right: 10px;
 	}
 }
-@media screen and (max-width: 480px){
-	.destaque-imagem{
+
+@media screen and (max-width: 480px) {
+	.destaque-imagem {
 		background: url('../img/destaque_mobile.png') no-repeat center center;
 		background-size: cover;
 		padding: 50px;
 		padding-top: 150px;
 	}
-	
+
 }
