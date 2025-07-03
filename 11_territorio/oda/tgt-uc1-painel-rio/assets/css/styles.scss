@@ -147,6 +147,45 @@
     }
 }
 
+figcaption {
+    padding: 5px 12px;
+    text-align: center;
+}
+
+.modal {
+
+    .modal-content {
+        background: #ffe6cc;
+    }
+
+    .modal-header {
+        border-bottom: none;
+
+        h5 {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .modal-footer {
+        border-top: none;
+    }
+
+    .btn-secondary {
+        padding: 6px 32px;
+        display: block;
+        margin: auto;
+        border: 2px solid #f9cb99;
+        background-color: #f9cb99;
+        border-radius: 5px;
+        color: black;
+
+        &:hover {
+            background-color: #ffe6cc;
+        }
+    }
+}
+
 @keyframes naoclicado {
     0% {
         transform: scale(1);
