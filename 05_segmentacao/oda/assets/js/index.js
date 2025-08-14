@@ -5,7 +5,12 @@ import { tags } from "./tags/index.js";
 import { suitcases } from "./suitcases/index.js";
 import { swiperBeltTags } from "./swipers/swiperBeltTags.js";
 import { swiperBeltSuitcase } from "./swipers/swiperBeltSuitcase.js";
-import { endGame, negative, positive } from "./feedback/index.js";
+import {
+  endGame,
+  negative,
+  positive,
+  positiveSuitcase,
+} from "./feedback/index.js";
 
 window.addEventListener("DOMContentLoaded", (e) => {
   resizeBodyCadeia();
@@ -101,8 +106,8 @@ window.addEventListener("DOMContentLoaded", (e) => {
       beltSuitcase.querySelector(".swiper-wrapper").insertAdjacentHTML(
         "beforeend",
         `
-            <div class="swiper-slide" style="background-image: url('${s.img}');">
-              <div class="containerTag suitcase0${s.suitcaseID}" data-id="${s.id}">
+            <div class="swiper-slide containerSuitcase suitcase0${s.suitcaseID}" data-id="${s.id}" style="background-image: url('${s.img}');">
+              <div class="containerTag suitcase0${s.suitcaseID}"">
                 <img src="./assets/imgs/tags/tag_vazia.png" class="tagImg" />
               </div>
               <div class="containerTxt d-none">
@@ -118,6 +123,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
   // Containers das malas para controle do slot da tag e aparição dos textos
   const containersTxt = document.querySelectorAll(".containerTxt");
   const containersTag = document.querySelectorAll(".containerTag");
+  const containersSuitcase = document.querySelectorAll(".containerSuitcase");
 
   // Executa a troca de fase
   if (btnInit)
@@ -149,7 +155,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
     document.querySelector(".swiperBeltTags .swiper-wrapper"),
   ];
   containersTag.forEach((ct) => containers.push(ct));
-
+  containersSuitcase.forEach((cs) => containers.push(cs));
   // Variáveis de controle para mudança de "Fases"
   let counter = 0;
   let endGameCounter = 0;
@@ -180,6 +186,11 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
         audioOk.load();
         audioOk.play();
+        const txt = popUpFeedback.querySelector(".txt");
+        txt.innerHTML = positiveSuitcase;
+        txt.classList.add("negative");
+        fadeIn(popUpFeedback, delayAnimation);
+        btn.setAttribute("data-action", "continue");
         counter++;
         if (counter == 3) {
           counter = 0;

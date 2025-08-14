@@ -1,4 +1,6 @@
 export const positive = "Muito Bem! <br /> Próximas Malas!";
+export const positiveSuitcase =
+  "Parabéns! <br /> Você relacionou corretamente o segmento turístico com suas características.";
 export const negative =
-  "Quase lá! <br />Revise novamente os conceitos do turismo para relacioná-lo com suas características.!";
+  "Resposta incorreta! <br /> Revise os conceitos dos segmentos do turismo para relacioná-los com suas características.";
 export const endGame = "Parabéns!<br/> Confira o resultado";
