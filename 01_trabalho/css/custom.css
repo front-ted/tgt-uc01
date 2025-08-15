@@ -14,8 +14,12 @@ body {
 .titulo{
  	border: 1px solid #f79d6b;
 	background-color: rgba(238, 125, 0, 0.5); 
-	padding-left: 50px;
+	padding-left: 20px;
  	border-radius: 25px;
+}
+
+.titulo h2{
+	margin-left: 0;
 }
 
 .bloco1 h2 {
